@@ -37,17 +37,17 @@ namespace Capa_Logica_SCM
 
 
         //------------------------------------------------------------------------------------------------------INSERTS IMPUESTO-------------------------------------------------------//
-        public OdbcDataReader InsertarImpuesto(string sCodigo, string sNombre, string sTipoconcepto)
+        public OdbcDataReader InsertarImpuesto(string sCodigo, string sNombre, string sTipoconcepto, string sValor)
         {
-            return sn.InsertarImpuesto(sCodigo, sNombre, sTipoconcepto);
+            return sn.InsertarImpuesto(sCodigo, sNombre, sTipoconcepto, sValor);
 
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
         //------------------------------------------------------------------------------------------------------UPDATE IMPUESTO-------------------------------------------------------//
-        public OdbcDataReader modificarImpuesto(string sCodigo, string sNombre, string sTipoconcepto)
+        public OdbcDataReader modificarImpuesto(string sCodigo, string sNombre, string sTipoconcepto, string sValor)
         {
-            return sn.modificarImpuesto(sCodigo, sNombre, sTipoconcepto);
+            return sn.modificarImpuesto(sCodigo, sNombre, sTipoconcepto, sValor);
 
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------//
@@ -57,5 +57,21 @@ namespace Capa_Logica_SCM
             return sn.eliminarImpuesto(sCodigo);
 
         }
+        //------------------------------------------------------------------------------------------------------CONSULTA ENCABEZADO ORDEN DE COMPRA------------------------------------------------------//
+
+        public OdbcDataReader consultaOrdenCompraEncabezado()
+        {
+            return sn.consultaOrdenCompraEncabezado();
+        }
+
+        //------------------------------------------------------------------------------------------------------CONSULTA PROVEEDOR-ORDEN DE COMPRA-----------------------------------------------------//
+
+        public OdbcDataReader consultaProveedorOrden(string sCod)
+        {
+            return sn.consultaProveedorOrden(sCod);
+        }
+
+
+
     }
 }

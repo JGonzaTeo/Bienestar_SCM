@@ -32,12 +32,12 @@ namespace Capa_Datos_SCM
 
         }
         //---------------------------------------------------------------INSERT IMPUESTO------------------------------------------------------------------------------------------//
-        public OdbcDataReader InsertarImpuesto(string sCodigo, string sNombre, string sDescripcion)
+        public OdbcDataReader InsertarImpuesto(string sCodigo, string sNombre, string sDescripcion, string sValor)
         {
             try
             {
                 cn.conexionbd();
-                string consulta = "insert into impuestos values(" + sCodigo + ", '" + sNombre + "' ,'" + sDescripcion + "',1);";
+                string consulta = "insert into impuestos values(" + sCodigo + ", '" + sNombre + "' ,'" + sDescripcion + "'," + sValor + ",1);";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -50,12 +50,12 @@ namespace Capa_Datos_SCM
         }
         //---------------------------------------------------------------UPDATE IMPUESTO------------------------------------------------------------------------------------------//
 
-        public OdbcDataReader modificarImpuesto(string sCodigo, string sNombre, string sDescripcion)
+        public OdbcDataReader modificarImpuesto(string sCodigo, string sNombre, string sDescripcion, string sValor)
         {
             try
             {
                 cn.conexionbd();
-                string consulta = "UPDATE impuestos set nombre='" + sNombre + "',descripcion='" + sDescripcion+ "'"+ " where pkidImpuesto='" + sCodigo + "';";
+                string consulta = "UPDATE impuestos set nombre='" + sNombre + "', descripcion='" + sDescripcion+ "'"+ ", valor = " + sValor + " where pkidImpuesto = " + sCodigo + ";";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -83,6 +83,45 @@ namespace Capa_Datos_SCM
                 Console.WriteLine(err.Message);
                 return null;
             }
+        }
+        //---------------------------------------------------------------CONSULTA ORDEN DE COMPRA ENCABEZADO------------------------------------------------------------------------------------------//
+
+        public OdbcDataReader consultaOrdenCompraEncabezado()
+        {
+            try
+            {
+                OdbcCommand command = new OdbcCommand("SELECT * FROM ordencomrpaencabezado WHERE estado = 1 ;", cn.conexionbd());
+                OdbcDataReader reader = command.ExecuteReader();
+                reader.Read();
+                return reader;
+            }
+            catch (Exception err)
+            {
+
+                Console.WriteLine(err.Message);
+                return null;
+            }
+
+        }
+        //---------------------------------------------------------------CONSULTA PROVEEDOR-ORDEN DE COMPRA------------------------------------------------------------------------------------------//
+
+        public OdbcDataReader consultaProveedorOrden(string sCOD)
+        {
+            try
+            {
+                OdbcCommand command = new OdbcCommand("select P.pkidProveedor, P.nombre, P.nit from ordencomrpaencabezado O left join  proveedor P on O.fkIdProveedor = P.pkidProveedor where O.pkIdOrdenCompraEncabezado = "+ sCOD +";", cn.conexionbd());
+                OdbcDataReader reader = command.ExecuteReader();
+                reader.Read();
+                Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
+                return reader;
+            }
+            catch (Exception err)
+            {
+
+                Console.WriteLine(err.Message);
+                return null;
+            }
+
         }
 
 
