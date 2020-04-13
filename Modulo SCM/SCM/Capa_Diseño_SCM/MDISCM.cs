@@ -1,4 +1,5 @@
-﻿using CapaDiseño.Mantenimientos;
+﻿using Capa_Diseño_SCM.Mantenimientos;
+using CapaDiseño.Mantenimientos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,6 +54,28 @@ namespace Capa_Diseño_SCM
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,49 +156,26 @@ namespace Capa_Diseño_SCM
             }
         }
 
-        bool ventanaExistencia = false;
-        Frm_ExistenciasProducto existenciaP = new Frm_ExistenciasProducto();
-        private void existenciasProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        bool ventanaImpuestos = false;
+        Frm_MantImpuestos impuestos = new Frm_MantImpuestos("");
+        private void impuestosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ExistenciasProducto);
-            if (ventanaExistencia == false || frmC == null)
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantImpuestos);
+            if (ventanaImpuestos == false || frmC == null)
             {
                 if (frmC == null)
                 {
-                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
+                    impuestos = new Frm_MantImpuestos(susuario);
                 }
 
-                existenciaP.MdiParent = this;
-                existenciaP.Show();
+                impuestos.MdiParent = this;
+                impuestos.Show();
                 Application.DoEvents();
-                ventanaExistencia = true;
+                ventanaImpuestos = true;
             }
             else
             {
-                existenciaP.WindowState = System.Windows.Forms.FormWindowState.Normal;
-            }
-        }
-
-        bool movimientoInventario = false;
-        Frm_ListaMovInv movInv = new Frm_ListaMovInv();
-        private void movimientosDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ListaMovInv);
-            if (movimientoInventario == false || frmC == null)
-            {
-                if (frmC == null)
-                {
-                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
-                }
-
-                movInv.MdiParent = this;
-                movInv.Show();
-                Application.DoEvents();
-                movimientoInventario = true;
-            }
-            else
-            {
-                movInv.WindowState = System.Windows.Forms.FormWindowState.Normal;
+                impuestos.WindowState = System.Windows.Forms.FormWindowState.Normal;
             }
         }
     }

@@ -87,12 +87,12 @@
             this.gpb_datos.Controls.Add(this.Lbl_codPercepcion);
             this.gpb_datos.Controls.Add(this.Txt_IdP);
             this.gpb_datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpb_datos.Location = new System.Drawing.Point(17, 175);
+            this.gpb_datos.Location = new System.Drawing.Point(9, 159);
             this.gpb_datos.Margin = new System.Windows.Forms.Padding(2);
             this.gpb_datos.Name = "gpb_datos";
             this.gpb_datos.Padding = new System.Windows.Forms.Padding(2);
             this.gpb_datos.Size = new System.Drawing.Size(916, 279);
-            this.gpb_datos.TabIndex = 80;
+            this.gpb_datos.TabIndex = 87;
             this.gpb_datos.TabStop = false;
             this.gpb_datos.Text = "Datos";
             // 
@@ -145,7 +145,6 @@
             this.Cbo_Proveedor.Name = "Cbo_Proveedor";
             this.Cbo_Proveedor.Size = new System.Drawing.Size(140, 25);
             this.Cbo_Proveedor.TabIndex = 18;
-            this.Cbo_Proveedor.SelectedIndexChanged += new System.EventHandler(this.Cbo_Proveedor_SelectedIndexChanged);
             // 
             // Txt_Existencias
             // 
@@ -288,14 +287,15 @@
             this.Btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_consultar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_consultar.Image")));
             this.Btn_consultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultar.Location = new System.Drawing.Point(585, 66);
+            this.Btn_consultar.Location = new System.Drawing.Point(577, 50);
             this.Btn_consultar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_consultar.Name = "Btn_consultar";
             this.Btn_consultar.Size = new System.Drawing.Size(140, 89);
-            this.Btn_consultar.TabIndex = 79;
+            this.Btn_consultar.TabIndex = 86;
             this.Btn_consultar.Text = "Consultar";
             this.Btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_consultar.UseVisualStyleBackColor = false;
+            this.Btn_consultar.Click += new System.EventHandler(this.Btn_consultar_Click);
             // 
             // Btn_borrar
             // 
@@ -309,14 +309,15 @@
             this.Btn_borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_borrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_borrar.Image")));
             this.Btn_borrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_borrar.Location = new System.Drawing.Point(500, 66);
+            this.Btn_borrar.Location = new System.Drawing.Point(492, 50);
             this.Btn_borrar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_borrar.Name = "Btn_borrar";
             this.Btn_borrar.Size = new System.Drawing.Size(86, 89);
-            this.Btn_borrar.TabIndex = 78;
+            this.Btn_borrar.TabIndex = 85;
             this.Btn_borrar.Text = "Borrar";
             this.Btn_borrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_borrar.UseVisualStyleBackColor = false;
+            this.Btn_borrar.Click += new System.EventHandler(this.Btn_borrar_Click);
             // 
             // Btn_guardar
             // 
@@ -329,14 +330,15 @@
             this.Btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_guardar.Image")));
             this.Btn_guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_guardar.Location = new System.Drawing.Point(416, 66);
+            this.Btn_guardar.Location = new System.Drawing.Point(408, 50);
             this.Btn_guardar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_guardar.Name = "Btn_guardar";
             this.Btn_guardar.Size = new System.Drawing.Size(86, 89);
-            this.Btn_guardar.TabIndex = 77;
+            this.Btn_guardar.TabIndex = 84;
             this.Btn_guardar.Text = "Guardar";
             this.Btn_guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_guardar.UseVisualStyleBackColor = false;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // Btn_editar
             // 
@@ -349,14 +351,15 @@
             this.Btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_editar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_editar.Image")));
             this.Btn_editar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_editar.Location = new System.Drawing.Point(332, 66);
+            this.Btn_editar.Location = new System.Drawing.Point(324, 50);
             this.Btn_editar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_editar.Name = "Btn_editar";
             this.Btn_editar.Size = new System.Drawing.Size(86, 89);
-            this.Btn_editar.TabIndex = 76;
+            this.Btn_editar.TabIndex = 83;
             this.Btn_editar.Text = "Editar";
             this.Btn_editar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_editar.UseVisualStyleBackColor = false;
+            this.Btn_editar.Click += new System.EventHandler(this.Btn_editar_Click);
             // 
             // Btn_ingresar
             // 
@@ -369,11 +372,11 @@
             this.Btn_ingresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ingresar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ingresar.Image")));
             this.Btn_ingresar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_ingresar.Location = new System.Drawing.Point(248, 66);
+            this.Btn_ingresar.Location = new System.Drawing.Point(240, 50);
             this.Btn_ingresar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_ingresar.Name = "Btn_ingresar";
             this.Btn_ingresar.Size = new System.Drawing.Size(86, 89);
-            this.Btn_ingresar.TabIndex = 75;
+            this.Btn_ingresar.TabIndex = 82;
             this.Btn_ingresar.Text = "Ingresar";
             this.Btn_ingresar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_ingresar.UseVisualStyleBackColor = false;
@@ -386,11 +389,11 @@
             this.Pnl_nombreForm.Controls.Add(this.label1);
             this.Pnl_nombreForm.Controls.Add(this.btn_minimizar);
             this.Pnl_nombreForm.Controls.Add(this.btn_cerrar);
-            this.Pnl_nombreForm.Location = new System.Drawing.Point(-10, 2);
+            this.Pnl_nombreForm.Location = new System.Drawing.Point(-18, -14);
             this.Pnl_nombreForm.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_nombreForm.Name = "Pnl_nombreForm";
             this.Pnl_nombreForm.Size = new System.Drawing.Size(970, 51);
-            this.Pnl_nombreForm.TabIndex = 74;
+            this.Pnl_nombreForm.TabIndex = 81;
             // 
             // btn_Ayuda
             // 
@@ -446,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 464);
+            this.ClientSize = new System.Drawing.Size(935, 425);
             this.Controls.Add(this.gpb_datos);
             this.Controls.Add(this.Btn_consultar);
             this.Controls.Add(this.Btn_borrar);

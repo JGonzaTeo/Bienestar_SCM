@@ -49,6 +49,24 @@
     <Compile Include="Consultas\Frm_consultaConceptos.designer.cs">
       <DependentUpon>Frm_consultaConceptos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\Frm_consultaImpuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaImpuesto.Designer.cs">
+      <DependentUpon>Frm_consultaImpuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaProducto.Designer.cs">
+      <DependentUpon>Frm_consultaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantImpuestos.Designer.cs">
+      <DependentUpon>Frm_MantImpuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\Frm_MantPercepciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,29 +91,11 @@
     <Compile Include="Procesos\Frm_BusquedaOrdenCompra.Designer.cs">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\Frm_ExistenciasProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Frm_ExistenciasProducto.designer.cs">
-      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.Designer.cs">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Procesos\Frm_ListaMovInv.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Frm_ListaMovInv.designer.cs">
-      <DependentUpon>Frm_ListaMovInv.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Procesos\Frm_MovInvDetalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Frm_MovInvDetalle.designer.cs">
-      <DependentUpon>Frm_MovInvDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\Frm_Polizas.cs">
       <SubType>Form</SubType>
@@ -115,6 +115,15 @@
     <EmbeddedResource Include="Consultas\Frm_consultaConceptos.resx">
       <DependentUpon>Frm_consultaConceptos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaImpuesto.resx">
+      <DependentUpon>Frm_consultaImpuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaProducto.resx">
+      <DependentUpon>Frm_consultaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantImpuestos.resx">
+      <DependentUpon>Frm_MantImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Frm_MantPercepciones.resx">
       <DependentUpon>Frm_MantPercepciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,17 +136,8 @@
     <EmbeddedResource Include="Procesos\Frm_BusquedaOrdenCompra.resx">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Frm_ExistenciasProducto.resx">
-      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_FacturaProveedores.resx">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Frm_ListaMovInv.resx">
-      <DependentUpon>Frm_ListaMovInv.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Frm_MovInvDetalle.resx">
-      <DependentUpon>Frm_MovInvDetalle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

@@ -13,18 +13,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Capa_Diseño_SCM.Mantenimientos
 {
     public partial class Frm_MantProducto : Form
     {
         LIPSCM logic = new LIPSCM();
         Validaciones v = new Validaciones();
+        string scampo;
+        string slocalIP;
+        string smacAddresses;
+        string suser;
 
         public Frm_MantProducto()
         {
             InitializeComponent();
             bloqueartxt();
+        }
+
+        public void obtenerip()
+        {
+            IPHostEntry host;
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString() == "InterNetwork")
+                {
+                    slocalIP = ip.ToString();
+                }
+            }
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                if (nic.OperationalStatus == OperationalStatus.Up)
+                {
+                    smacAddresses += nic.GetPhysicalAddress().ToString();
+                    break;
+
+                }
+            }
         }
 
         public void bloqueartxt()
@@ -65,6 +90,20 @@ namespace Capa_Diseño_SCM.Mantenimientos
             Txt_Presentacion.Enabled = true;
         }
 
+        public void limpiar()
+        {
+            Txt_IdP.Text = "";
+            Txt_nombre.Text = "";
+            Txt_Costo.Text = "";
+            Txt_Descripcion.Text = "";
+            Txt_Existencias.Text = "";
+            Txt_Precio.Text = "";
+
+            Cbo_estado.Text = "";
+            Cbo_Proveedor.Text = "";
+            Txt_Presentacion.Text = "";
+        }
+
         private void Btn_ingresar_Click(object sender, EventArgs e)
         {
             desbloqueartxt();
@@ -80,9 +119,54 @@ namespace Capa_Diseño_SCM.Mantenimientos
             this.Dispose();
         }
 
-        private void Cbo_Proveedor_SelectedIndexChanged(object sender, EventArgs e)
+        private void Btn_editar_Click(object sender, EventArgs e)
         {
-            OdbcDataReader cita = logic.consultaproveedor();
+            OdbcDataReader cita = logic.Modificarproducto(Cbo_Proveedor.Text, Txt_IdP.Text, Txt_nombre.Text, Txt_Precio.Text, Txt_Descripcion.Text, Txt_Presentacion.Text, Txt_Costo.Text, Cbo_estado.Text, Cbo_TipoP.Text);
+            logic.bitacora("0", slocalIP, smacAddresses, suser, "RRHH", DateTime.Now.ToString("G"), "Modificar", this.GetType().Name);
+            MessageBox.Show("Datos modificados correctamente.");
+        }
+
+        private void Btn_guardar_Click(object sender, EventArgs e)
+        {
+            OdbcDataReader cita = logic.Insertarproducto(Cbo_Proveedor.Text, Txt_IdP.Text, Txt_nombre.Text, Txt_Precio.Text, Txt_Descripcion.Text, Txt_Presentacion.Text, Txt_Costo.Text, Cbo_estado.Text, Cbo_TipoP.Text);
+            MessageBox.Show("Datos registrados.");
+            logic.bitacora("0", slocalIP, smacAddresses, suser, "RRHH", DateTime.Now.ToString("G"), "Guardar", this.GetType().Name);
+            limpiar();
+        }
+
+        private void Btn_borrar_Click(object sender, EventArgs e)
+        {
+            OdbcDataReader cita = logic.Eliminarproducto(Txt_IdP.Text);
+            logic.bitacora("0", slocalIP, smacAddresses, suser, "RRHH", DateTime.Now.ToString("G"), "Eliminar", this.GetType().Name);
+            MessageBox.Show("Eliminado Correctamentee.");
+        }
+
+        private void Btn_consultar_Click(object sender, EventArgs e)
+        {
+            Frm_consultaConceptos concep = new Frm_consultaConceptos();
+            concep.ShowDialog();
+
+            if (concep.DialogResult == DialogResult.OK)
+            {
+                Cbo_Proveedor.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                      Cells[0].Value.ToString();
+                Txt_IdP.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                      Cells[1].Value.ToString();
+                Txt_nombre.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                      Cells[2].Value.ToString();
+                Txt_Precio.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                      Cells[3].Value.ToString();
+                Txt_Descripcion.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                      Cells[4].Value.ToString();
+                Txt_Presentacion.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                     Cells[5].Value.ToString();
+                Txt_Costo.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                    Cells[6].Value.ToString();
+                Cbo_estado.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                    Cells[5].Value.ToString();
+                Cbo_TipoP.Text = concep.Dgv_consultaConceptos.Rows[concep.Dgv_consultaConceptos.CurrentRow.Index].
+                    Cells[5].Value.ToString();
+            }
         }
     }
 }
