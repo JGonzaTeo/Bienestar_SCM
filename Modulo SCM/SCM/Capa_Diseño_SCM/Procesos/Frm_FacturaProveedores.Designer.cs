@@ -39,11 +39,14 @@
             this.lbl_codPro = new System.Windows.Forms.Label();
             this.txt_CODproveedor = new System.Windows.Forms.TextBox();
             this.Dgv_pedido = new System.Windows.Forms.DataGridView();
+            this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_pasarTodo = new System.Windows.Forms.Button();
             this.Btn_pasaUno = new System.Windows.Forms.Button();
             this.Btn_pasarUnoI = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lbl_nomPro = new System.Windows.Forms.Label();
             this.txt_Nombreproveedor = new System.Windows.Forms.TextBox();
             this.lbl_codU = new System.Windows.Forms.Label();
@@ -55,28 +58,26 @@
             this.txt_subTotal = new System.Windows.Forms.TextBox();
             this.lbl_totalImpuesto = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.BTn_guardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_nit = new System.Windows.Forms.TextBox();
             this.gb_impuestos = new System.Windows.Forms.GroupBox();
-            this.gb_encabezado = new System.Windows.Forms.GroupBox();
-            this.gp_detalle = new System.Windows.Forms.GroupBox();
-            this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbl_codImpuesto = new System.Windows.Forms.Label();
-            this.txt_codImpuesto = new System.Windows.Forms.TextBox();
-            this.lbl_valor = new System.Windows.Forms.Label();
-            this.txt_valor = new System.Windows.Forms.TextBox();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.txt_nombreImpuesto = new System.Windows.Forms.TextBox();
+            this.lbl_valor = new System.Windows.Forms.Label();
+            this.txt_valor = new System.Windows.Forms.TextBox();
+            this.lbl_codImpuesto = new System.Windows.Forms.Label();
+            this.txt_codImpuesto = new System.Windows.Forms.TextBox();
+            this.gb_encabezado = new System.Windows.Forms.GroupBox();
+            this.gp_detalle = new System.Windows.Forms.GroupBox();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.btn_buscarI = new System.Windows.Forms.Button();
             this.Pnl_nombreForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_pedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -215,6 +216,30 @@
             this.Dgv_pedido.Size = new System.Drawing.Size(492, 333);
             this.Dgv_pedido.TabIndex = 80;
             // 
+            // cod
+            // 
+            this.cod.HeaderText = "COD Producto";
+            this.cod.Name = "cod";
+            this.cod.ReadOnly = true;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            this.cantidad.ReadOnly = true;
+            // 
+            // pu
+            // 
+            this.pu.HeaderText = "Precio Unitario";
+            this.pu.Name = "pu";
+            this.pu.ReadOnly = true;
+            // 
+            // sub
+            // 
+            this.sub.HeaderText = "SubTotal";
+            this.sub.Name = "sub";
+            this.sub.ReadOnly = true;
+            // 
             // Btn_pasarTodo
             // 
             this.Btn_pasarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -273,15 +298,6 @@
             this.label3.Size = new System.Drawing.Size(108, 18);
             this.label3.TabIndex = 86;
             this.label3.Text = "Fecha Entrega:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(841, 64);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 24);
-            this.textBox2.TabIndex = 85;
             // 
             // lbl_nomPro
             // 
@@ -413,6 +429,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(492, 333);
             this.dataGridView1.TabIndex = 95;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "COD Producto";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Precio Unitario";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "SubTotal";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -474,11 +514,12 @@
             // 
             // gb_impuestos
             // 
+            this.gb_impuestos.Controls.Add(this.btn_buscarI);
             this.gb_impuestos.Controls.Add(this.lbl_nombre);
             this.gb_impuestos.Controls.Add(this.txt_nombreImpuesto);
             this.gb_impuestos.Controls.Add(this.lbl_valor);
-            this.gb_impuestos.Controls.Add(this.txt_valor);
             this.gb_impuestos.Controls.Add(this.lbl_codImpuesto);
+            this.gb_impuestos.Controls.Add(this.txt_valor);
             this.gb_impuestos.Controls.Add(this.txt_codImpuesto);
             this.gb_impuestos.Controls.Add(this.lbl_subTo);
             this.gb_impuestos.Controls.Add(this.txt_totalImpuesto);
@@ -490,8 +531,72 @@
             this.gb_impuestos.TabStop = false;
             this.gb_impuestos.Text = "Impuestos";
             // 
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(76, 65);
+            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(131, 18);
+            this.lbl_nombre.TabIndex = 104;
+            this.lbl_nombre.Text = "Nombre Impuesto:";
+            // 
+            // txt_nombreImpuesto
+            // 
+            this.txt_nombreImpuesto.Enabled = false;
+            this.txt_nombreImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombreImpuesto.Location = new System.Drawing.Point(273, 62);
+            this.txt_nombreImpuesto.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_nombreImpuesto.Name = "txt_nombreImpuesto";
+            this.txt_nombreImpuesto.Size = new System.Drawing.Size(156, 24);
+            this.txt_nombreImpuesto.TabIndex = 103;
+            // 
+            // lbl_valor
+            // 
+            this.lbl_valor.AutoSize = true;
+            this.lbl_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_valor.Location = new System.Drawing.Point(644, 22);
+            this.lbl_valor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_valor.Name = "lbl_valor";
+            this.lbl_valor.Size = new System.Drawing.Size(111, 18);
+            this.lbl_valor.TabIndex = 102;
+            this.lbl_valor.Text = "Valor Impuesto:";
+            // 
+            // txt_valor
+            // 
+            this.txt_valor.Enabled = false;
+            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_valor.Location = new System.Drawing.Point(841, 19);
+            this.txt_valor.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_valor.Name = "txt_valor";
+            this.txt_valor.Size = new System.Drawing.Size(156, 24);
+            this.txt_valor.TabIndex = 101;
+            // 
+            // lbl_codImpuesto
+            // 
+            this.lbl_codImpuesto.AutoSize = true;
+            this.lbl_codImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codImpuesto.Location = new System.Drawing.Point(76, 22);
+            this.lbl_codImpuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_codImpuesto.Name = "lbl_codImpuesto";
+            this.lbl_codImpuesto.Size = new System.Drawing.Size(145, 18);
+            this.lbl_codImpuesto.TabIndex = 100;
+            this.lbl_codImpuesto.Text = "Codigo de Impuesto:";
+            // 
+            // txt_codImpuesto
+            // 
+            this.txt_codImpuesto.Enabled = false;
+            this.txt_codImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codImpuesto.Location = new System.Drawing.Point(273, 19);
+            this.txt_codImpuesto.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codImpuesto.Name = "txt_codImpuesto";
+            this.txt_codImpuesto.Size = new System.Drawing.Size(156, 24);
+            this.txt_codImpuesto.TabIndex = 99;
+            // 
             // gb_encabezado
             // 
+            this.gb_encabezado.Controls.Add(this.dtp_fecha);
             this.gb_encabezado.Controls.Add(this.label2);
             this.gb_encabezado.Controls.Add(this.lbl_codU);
             this.gb_encabezado.Controls.Add(this.txt_CODproveedor);
@@ -506,7 +611,6 @@
             this.gb_encabezado.Controls.Add(this.txt_CODUsuario);
             this.gb_encabezado.Controls.Add(this.lbl_totalImpuesto);
             this.gb_encabezado.Controls.Add(this.lbl_nomPro);
-            this.gb_encabezado.Controls.Add(this.textBox2);
             this.gb_encabezado.Controls.Add(this.txt_subTotal);
             this.gb_encabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_encabezado.Location = new System.Drawing.Point(11, 86);
@@ -533,116 +637,24 @@
             this.gp_detalle.TabStop = false;
             this.gp_detalle.Text = "Detalle";
             // 
-            // cod
+            // dtp_fecha
             // 
-            this.cod.HeaderText = "COD Producto";
-            this.cod.Name = "cod";
-            this.cod.ReadOnly = true;
+            this.dtp_fecha.Location = new System.Drawing.Point(841, 64);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(156, 26);
+            this.dtp_fecha.TabIndex = 99;
+            this.dtp_fecha.ValueChanged += new System.EventHandler(this.dtp_fecha_ValueChanged);
             // 
-            // cantidad
+            // btn_buscarI
             // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.Name = "cantidad";
-            this.cantidad.ReadOnly = true;
-            // 
-            // pu
-            // 
-            this.pu.HeaderText = "Precio Unitario";
-            this.pu.Name = "pu";
-            this.pu.ReadOnly = true;
-            // 
-            // sub
-            // 
-            this.sub.HeaderText = "SubTotal";
-            this.sub.Name = "sub";
-            this.sub.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "COD Producto";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Precio Unitario";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "SubTotal";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // lbl_codImpuesto
-            // 
-            this.lbl_codImpuesto.AutoSize = true;
-            this.lbl_codImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_codImpuesto.Location = new System.Drawing.Point(76, 22);
-            this.lbl_codImpuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_codImpuesto.Name = "lbl_codImpuesto";
-            this.lbl_codImpuesto.Size = new System.Drawing.Size(145, 18);
-            this.lbl_codImpuesto.TabIndex = 100;
-            this.lbl_codImpuesto.Text = "Codigo de Impuesto:";
-            // 
-            // txt_codImpuesto
-            // 
-            this.txt_codImpuesto.Enabled = false;
-            this.txt_codImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codImpuesto.Location = new System.Drawing.Point(273, 19);
-            this.txt_codImpuesto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_codImpuesto.Name = "txt_codImpuesto";
-            this.txt_codImpuesto.Size = new System.Drawing.Size(156, 24);
-            this.txt_codImpuesto.TabIndex = 99;
-            // 
-            // lbl_valor
-            // 
-            this.lbl_valor.AutoSize = true;
-            this.lbl_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_valor.Location = new System.Drawing.Point(76, 62);
-            this.lbl_valor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_valor.Name = "lbl_valor";
-            this.lbl_valor.Size = new System.Drawing.Size(111, 18);
-            this.lbl_valor.TabIndex = 102;
-            this.lbl_valor.Text = "Valor Impuesto:";
-            // 
-            // txt_valor
-            // 
-            this.txt_valor.Enabled = false;
-            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_valor.Location = new System.Drawing.Point(273, 59);
-            this.txt_valor.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_valor.Name = "txt_valor";
-            this.txt_valor.Size = new System.Drawing.Size(156, 24);
-            this.txt_valor.TabIndex = 101;
-            // 
-            // lbl_nombre
-            // 
-            this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre.Location = new System.Drawing.Point(644, 25);
-            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(131, 18);
-            this.lbl_nombre.TabIndex = 104;
-            this.lbl_nombre.Text = "Nombre Impuesto:";
-            // 
-            // txt_nombreImpuesto
-            // 
-            this.txt_nombreImpuesto.Enabled = false;
-            this.txt_nombreImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombreImpuesto.Location = new System.Drawing.Point(841, 22);
-            this.txt_nombreImpuesto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_nombreImpuesto.Name = "txt_nombreImpuesto";
-            this.txt_nombreImpuesto.Size = new System.Drawing.Size(156, 24);
-            this.txt_nombreImpuesto.TabIndex = 103;
+            this.btn_buscarI.BackgroundImage = global::Capa_Diseño_SCM.Properties.Resources.icons8_espionaje_42;
+            this.btn_buscarI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarI.Location = new System.Drawing.Point(445, 18);
+            this.btn_buscarI.Name = "btn_buscarI";
+            this.btn_buscarI.Size = new System.Drawing.Size(32, 32);
+            this.btn_buscarI.TabIndex = 105;
+            this.btn_buscarI.UseVisualStyleBackColor = true;
+            this.btn_buscarI.Click += new System.EventHandler(this.btn_buscarI_Click);
             // 
             // Frm_FacturaProveedores
             // 
@@ -689,7 +701,6 @@
         private System.Windows.Forms.Button Btn_pasaUno;
         private System.Windows.Forms.Button Btn_pasarUnoI;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lbl_nomPro;
         private System.Windows.Forms.TextBox txt_Nombreproveedor;
         private System.Windows.Forms.Label lbl_codU;
@@ -723,5 +734,7 @@
         private System.Windows.Forms.GroupBox gp_detalle;
         private System.Windows.Forms.Label lbl_nombre;
         private System.Windows.Forms.TextBox txt_nombreImpuesto;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
+        private System.Windows.Forms.Button btn_buscarI;
     }
 }

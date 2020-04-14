@@ -71,6 +71,13 @@ namespace Capa_Logica_SCM
             return sn.consultaProveedorOrden(sCod);
         }
 
+        //------------------------------------------------------------------------------------------------------CONSULTA DETALLE ORDEN DE COMPRA-----------------------------------------------------//
+
+        public OdbcDataReader consultaDetalleOrden(string sCod)
+        {
+            return sn.consultaDetalleOrden(sCod);
+        }
+
 
 
     }
