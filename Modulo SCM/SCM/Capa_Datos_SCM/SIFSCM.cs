@@ -18,14 +18,14 @@ namespace Capa_Datos_SCM
         {
             try
             {
-                OdbcCommand command = new OdbcCommand("SELECT * FROM impuestos WHERE estado = 1 ;", cn.conexionbd());
-                OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
-                return reader;
+                cn.conexionbd();
+                string consulta = "SELECT * FROM impuestos WHERE estado = 1 ;";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
             }
             catch (Exception err)
             {
-
                 Console.WriteLine(err.Message);
                 return null;
             }
@@ -90,18 +90,17 @@ namespace Capa_Datos_SCM
         {
             try
             {
-                OdbcCommand command = new OdbcCommand("SELECT * FROM ordencomrpaencabezado WHERE estado = 1 ;", cn.conexionbd());
-                OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
-                return reader;
+                cn.conexionbd();
+                string consulta = "SELECT * FROM ordencomrpaencabezado WHERE estado = 1 ;";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
             }
             catch (Exception err)
             {
-
                 Console.WriteLine(err.Message);
                 return null;
             }
-
         }
         //---------------------------------------------------------------CONSULTA PROVEEDOR-ORDEN DE COMPRA------------------------------------------------------------------------------------------//
 
@@ -112,7 +111,7 @@ namespace Capa_Datos_SCM
                 OdbcCommand command = new OdbcCommand("select P.pkidProveedor, P.nombre, P.nit from ordencomrpaencabezado O left join  proveedor P on O.fkIdProveedor = P.pkidProveedor where O.pkIdOrdenCompraEncabezado = "+ sCOD +";", cn.conexionbd());
                 OdbcDataReader reader = command.ExecuteReader();
                 reader.Read();
-                Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
+                //Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
                 return reader;
             }
             catch (Exception err)
@@ -123,7 +122,42 @@ namespace Capa_Datos_SCM
             }
 
         }
+        //---------------------------------------------------------------CONSULTA DETALLE DE ORDEN DE COMPRA-----------------------------------------------------------------------------------------//
 
+        public OdbcDataReader consultaDetalleOrden(string sCOD)
+        {
+
+            try
+            {
+                cn.conexionbd();
+                string consulta = "SELECT * FROM ordencompradetalle WHERE fkIdordenCompraEncabezado = " + sCOD +";";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+            /*
+            try
+            {
+                OdbcCommand command = new OdbcCommand(" SELECT fkIdProducto, cantidad, subTotal, estado FROM ordencompradetalle WHERE fkIdordenCompraEncabezado = " + sCOD + ";", cn.conexionbd());
+                OdbcDataReader reader = command.ExecuteReader();
+                reader.Read();
+                //Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
+                return reader;
+            }
+            catch (Exception err)
+            {
+
+                Console.WriteLine(err.Message);
+                return null;
+            }
+            */
+
+        }
 
     }
 }

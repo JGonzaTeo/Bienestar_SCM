@@ -42,3 +42,4 @@ C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SC
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Properties.Resources.resources

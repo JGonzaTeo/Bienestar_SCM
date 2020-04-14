@@ -36,6 +36,7 @@ namespace Capa_Diseño_SCM
                 {
                     string s = mostrar.GetString(0) + mostrar.GetString(1) + mostrar.GetString(2);
                     Console.WriteLine(s);
+                    Dgv_consultaOrdenCompra.Refresh();
                     Dgv_consultaOrdenCompra.Rows.Add(mostrar.GetString(0), mostrar.GetString(3), mostrar.GetString(4), mostrar.GetString(1), mostrar.GetString(8));
                 }
             }
