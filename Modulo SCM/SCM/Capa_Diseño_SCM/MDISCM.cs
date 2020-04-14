@@ -1,4 +1,5 @@
-﻿using CapaDiseño.Mantenimientos;
+﻿using Capa_Diseño_SCM.Mantenimientos;
+using CapaDiseño.Mantenimientos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,6 +54,28 @@ namespace Capa_Diseño_SCM
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -130,6 +153,29 @@ namespace Capa_Diseño_SCM
             else
             {
                 facturaP.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+        bool ventanaImpuestos = false;
+        Frm_MantImpuestos impuestos = new Frm_MantImpuestos("");
+        private void impuestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantImpuestos);
+            if (ventanaImpuestos == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    impuestos = new Frm_MantImpuestos(susuario);
+                }
+
+                impuestos.MdiParent = this;
+                impuestos.Show();
+                Application.DoEvents();
+                ventanaImpuestos = true;
+            }
+            else
+            {
+                impuestos.WindowState = System.Windows.Forms.FormWindowState.Normal;
             }
         }
 

@@ -51,25 +51,23 @@
             this.Gpb_proMovInt = new System.Windows.Forms.GroupBox();
             this.Btn_agregar = new System.Windows.Forms.Button();
             this.Txt_cantidadPro = new System.Windows.Forms.TextBox();
-            this.Txt_costoPro = new System.Windows.Forms.TextBox();
+            this.Txt_conceptoPro = new System.Windows.Forms.TextBox();
             this.Txt_precioPro = new System.Windows.Forms.TextBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
             this.Txt_productoMovInt = new System.Windows.Forms.TextBox();
-            this.Lbl_costoPro = new System.Windows.Forms.Label();
+            this.Lbl_conceptoPro = new System.Windows.Forms.Label();
             this.Lbl_cantidadPro = new System.Windows.Forms.Label();
             this.Lbl_precioPro = new System.Windows.Forms.Label();
             this.Lbl_producto = new System.Windows.Forms.Label();
-            this.Lbl_costoTotal = new System.Windows.Forms.Label();
             this.Lbl_precioTotal = new System.Windows.Forms.Label();
             this.Btn_eliminar = new System.Windows.Forms.Button();
             this.Dgv_MovIntDetalles = new System.Windows.Forms.DataGridView();
+            this.Txt_precioTotal = new System.Windows.Forms.TextBox();
             this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Txt_precioTotal = new System.Windows.Forms.TextBox();
-            this.Txt_costoTotal = new System.Windows.Forms.TextBox();
             this.Pnl_nombreForm.SuspendLayout();
             this.Gpb_MovInt.SuspendLayout();
             this.Gpb_proMovInt.SuspendLayout();
@@ -273,11 +271,11 @@
             // 
             this.Gpb_proMovInt.Controls.Add(this.Btn_agregar);
             this.Gpb_proMovInt.Controls.Add(this.Txt_cantidadPro);
-            this.Gpb_proMovInt.Controls.Add(this.Txt_costoPro);
+            this.Gpb_proMovInt.Controls.Add(this.Txt_conceptoPro);
             this.Gpb_proMovInt.Controls.Add(this.Txt_precioPro);
             this.Gpb_proMovInt.Controls.Add(this.Btn_buscar);
             this.Gpb_proMovInt.Controls.Add(this.Txt_productoMovInt);
-            this.Gpb_proMovInt.Controls.Add(this.Lbl_costoPro);
+            this.Gpb_proMovInt.Controls.Add(this.Lbl_conceptoPro);
             this.Gpb_proMovInt.Controls.Add(this.Lbl_cantidadPro);
             this.Gpb_proMovInt.Controls.Add(this.Lbl_precioPro);
             this.Gpb_proMovInt.Controls.Add(this.Lbl_producto);
@@ -304,12 +302,12 @@
             this.Txt_cantidadPro.Size = new System.Drawing.Size(187, 20);
             this.Txt_cantidadPro.TabIndex = 11;
             // 
-            // Txt_costoPro
+            // Txt_conceptoPro
             // 
-            this.Txt_costoPro.Location = new System.Drawing.Point(382, 82);
-            this.Txt_costoPro.Name = "Txt_costoPro";
-            this.Txt_costoPro.Size = new System.Drawing.Size(187, 20);
-            this.Txt_costoPro.TabIndex = 10;
+            this.Txt_conceptoPro.Location = new System.Drawing.Point(382, 82);
+            this.Txt_conceptoPro.Name = "Txt_conceptoPro";
+            this.Txt_conceptoPro.Size = new System.Drawing.Size(187, 20);
+            this.Txt_conceptoPro.TabIndex = 10;
             // 
             // Txt_precioPro
             // 
@@ -335,14 +333,14 @@
             this.Txt_productoMovInt.Size = new System.Drawing.Size(398, 20);
             this.Txt_productoMovInt.TabIndex = 6;
             // 
-            // Lbl_costoPro
+            // Lbl_conceptoPro
             // 
-            this.Lbl_costoPro.AutoSize = true;
-            this.Lbl_costoPro.Location = new System.Drawing.Point(327, 89);
-            this.Lbl_costoPro.Name = "Lbl_costoPro";
-            this.Lbl_costoPro.Size = new System.Drawing.Size(34, 13);
-            this.Lbl_costoPro.TabIndex = 3;
-            this.Lbl_costoPro.Text = "Costo";
+            this.Lbl_conceptoPro.AutoSize = true;
+            this.Lbl_conceptoPro.Location = new System.Drawing.Point(323, 85);
+            this.Lbl_conceptoPro.Name = "Lbl_conceptoPro";
+            this.Lbl_conceptoPro.Size = new System.Drawing.Size(53, 13);
+            this.Lbl_conceptoPro.TabIndex = 3;
+            this.Lbl_conceptoPro.Text = "Concepto";
             // 
             // Lbl_cantidadPro
             // 
@@ -371,19 +369,10 @@
             this.Lbl_producto.TabIndex = 0;
             this.Lbl_producto.Text = "Producto";
             // 
-            // Lbl_costoTotal
-            // 
-            this.Lbl_costoTotal.AutoSize = true;
-            this.Lbl_costoTotal.Location = new System.Drawing.Point(237, 555);
-            this.Lbl_costoTotal.Name = "Lbl_costoTotal";
-            this.Lbl_costoTotal.Size = new System.Drawing.Size(61, 13);
-            this.Lbl_costoTotal.TabIndex = 5;
-            this.Lbl_costoTotal.Text = "Costo Total";
-            // 
             // Lbl_precioTotal
             // 
             this.Lbl_precioTotal.AutoSize = true;
-            this.Lbl_precioTotal.Location = new System.Drawing.Point(32, 555);
+            this.Lbl_precioTotal.Location = new System.Drawing.Point(341, 555);
             this.Lbl_precioTotal.Name = "Lbl_precioTotal";
             this.Lbl_precioTotal.Size = new System.Drawing.Size(64, 13);
             this.Lbl_precioTotal.TabIndex = 4;
@@ -404,14 +393,22 @@
             this.Dgv_MovIntDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CodigoProducto,
             this.NombreProducto,
+            this.Concepto,
             this.Cantidad,
-            this.Precio,
-            this.Costo});
+            this.Precio});
             this.Dgv_MovIntDetalles.Location = new System.Drawing.Point(24, 426);
             this.Dgv_MovIntDetalles.Name = "Dgv_MovIntDetalles";
             this.Dgv_MovIntDetalles.RowHeadersVisible = false;
-            this.Dgv_MovIntDetalles.Size = new System.Drawing.Size(506, 104);
+            this.Dgv_MovIntDetalles.Size = new System.Drawing.Size(503, 104);
             this.Dgv_MovIntDetalles.TabIndex = 7;
+            // 
+            // Txt_precioTotal
+            // 
+            this.Txt_precioTotal.Enabled = false;
+            this.Txt_precioTotal.Location = new System.Drawing.Point(427, 548);
+            this.Txt_precioTotal.Name = "Txt_precioTotal";
+            this.Txt_precioTotal.Size = new System.Drawing.Size(100, 20);
+            this.Txt_precioTotal.TabIndex = 8;
             // 
             // CodigoProducto
             // 
@@ -423,6 +420,11 @@
             this.NombreProducto.HeaderText = "Nombre Producto";
             this.NombreProducto.Name = "NombreProducto";
             // 
+            // Concepto
+            // 
+            this.Concepto.HeaderText = "Concepto";
+            this.Concepto.Name = "Concepto";
+            // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
@@ -433,37 +435,14 @@
             this.Precio.HeaderText = "Precio";
             this.Precio.Name = "Precio";
             // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.Name = "Costo";
-            // 
-            // Txt_precioTotal
-            // 
-            this.Txt_precioTotal.Enabled = false;
-            this.Txt_precioTotal.Location = new System.Drawing.Point(114, 552);
-            this.Txt_precioTotal.Name = "Txt_precioTotal";
-            this.Txt_precioTotal.Size = new System.Drawing.Size(100, 20);
-            this.Txt_precioTotal.TabIndex = 8;
-            // 
-            // Txt_costoTotal
-            // 
-            this.Txt_costoTotal.Enabled = false;
-            this.Txt_costoTotal.Location = new System.Drawing.Point(316, 552);
-            this.Txt_costoTotal.Name = "Txt_costoTotal";
-            this.Txt_costoTotal.Size = new System.Drawing.Size(100, 20);
-            this.Txt_costoTotal.TabIndex = 9;
-            // 
             // Frm_MovInvDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 588);
-            this.Controls.Add(this.Txt_costoTotal);
             this.Controls.Add(this.Txt_precioTotal);
             this.Controls.Add(this.Dgv_MovIntDetalles);
             this.Controls.Add(this.Btn_eliminar);
-            this.Controls.Add(this.Lbl_costoTotal);
             this.Controls.Add(this.Gpb_proMovInt);
             this.Controls.Add(this.Lbl_precioTotal);
             this.Controls.Add(this.Gpb_MovInt);
@@ -506,27 +485,25 @@
         private System.Windows.Forms.TextBox Txt_tipoMov;
         private System.Windows.Forms.TextBox Txt_codigoMov;
         private System.Windows.Forms.Button Btn_guardar;
-        private System.Windows.Forms.Label Lbl_costoPro;
+        private System.Windows.Forms.Label Lbl_conceptoPro;
         private System.Windows.Forms.Label Lbl_cantidadPro;
         private System.Windows.Forms.Label Lbl_precioPro;
         private System.Windows.Forms.Label Lbl_producto;
-        private System.Windows.Forms.Label Lbl_costoTotal;
         private System.Windows.Forms.Label Lbl_precioTotal;
         private System.Windows.Forms.Button Btn_agregar;
         private System.Windows.Forms.Button Btn_eliminar;
         private System.Windows.Forms.TextBox Txt_cantidadPro;
-        private System.Windows.Forms.TextBox Txt_costoPro;
+        private System.Windows.Forms.TextBox Txt_conceptoPro;
         private System.Windows.Forms.TextBox Txt_precioPro;
         private System.Windows.Forms.Button Btn_buscar;
         private System.Windows.Forms.TextBox Txt_productoMovInt;
         private System.Windows.Forms.DataGridView Dgv_MovIntDetalles;
+        private System.Windows.Forms.TextBox Txt_precioTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private System.Windows.Forms.TextBox Txt_precioTotal;
-        private System.Windows.Forms.TextBox Txt_costoTotal;
     }
 }
 

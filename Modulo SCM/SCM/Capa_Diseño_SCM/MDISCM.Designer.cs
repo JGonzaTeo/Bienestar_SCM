@@ -35,10 +35,9 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.percepcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.impuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoFacturaProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.existenciasProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.movimientosDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -52,6 +51,8 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.existenciasProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimientosDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -89,7 +90,8 @@
             // mantenimientosToolStripMenuItem
             // 
             this.mantenimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.percepcionToolStripMenuItem});
+            this.percepcionToolStripMenuItem,
+            this.impuestosToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
@@ -97,9 +99,16 @@
             // percepcionToolStripMenuItem
             // 
             this.percepcionToolStripMenuItem.Name = "percepcionToolStripMenuItem";
-            this.percepcionToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.percepcionToolStripMenuItem.Text = "Percepcion";
+            this.percepcionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.percepcionToolStripMenuItem.Text = "Percepción";
             this.percepcionToolStripMenuItem.Click += new System.EventHandler(this.PercepcionToolStripMenuItem_Click);
+            // 
+            // impuestosToolStripMenuItem
+            // 
+            this.impuestosToolStripMenuItem.Name = "impuestosToolStripMenuItem";
+            this.impuestosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.impuestosToolStripMenuItem.Text = "Impuestos";
+            this.impuestosToolStripMenuItem.Click += new System.EventHandler(this.impuestosToolStripMenuItem_Click);
             // 
             // procesoToolStripMenuItem
             // 
@@ -117,20 +126,6 @@
             this.ingresoFacturaProveedoresToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.ingresoFacturaProveedoresToolStripMenuItem.Text = "Ingreso Factura Proveedores";
             this.ingresoFacturaProveedoresToolStripMenuItem.Click += new System.EventHandler(this.ingresoFacturaProveedoresToolStripMenuItem_Click);
-            // 
-            // existenciasProductoToolStripMenuItem
-            // 
-            this.existenciasProductoToolStripMenuItem.Name = "existenciasProductoToolStripMenuItem";
-            this.existenciasProductoToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.existenciasProductoToolStripMenuItem.Text = "Existencias Producto";
-            this.existenciasProductoToolStripMenuItem.Click += new System.EventHandler(this.existenciasProductoToolStripMenuItem_Click);
-            // 
-            // movimientosDeInventarioToolStripMenuItem
-            // 
-            this.movimientosDeInventarioToolStripMenuItem.Name = "movimientosDeInventarioToolStripMenuItem";
-            this.movimientosDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.movimientosDeInventarioToolStripMenuItem.Text = "Movimientos de Inventario";
-            this.movimientosDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.movimientosDeInventarioToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
@@ -240,6 +235,20 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // existenciasProductoToolStripMenuItem
+            // 
+            this.existenciasProductoToolStripMenuItem.Name = "existenciasProductoToolStripMenuItem";
+            this.existenciasProductoToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.existenciasProductoToolStripMenuItem.Text = "Existencias Producto";
+            this.existenciasProductoToolStripMenuItem.Click += new System.EventHandler(this.existenciasProductoToolStripMenuItem_Click);
+            // 
+            // movimientosDeInventarioToolStripMenuItem
+            // 
+            this.movimientosDeInventarioToolStripMenuItem.Name = "movimientosDeInventarioToolStripMenuItem";
+            this.movimientosDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.movimientosDeInventarioToolStripMenuItem.Text = "Movimientos de Inventario";
+            this.movimientosDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.movimientosDeInventarioToolStripMenuItem_Click);
+            // 
             // MDISCM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,6 +296,7 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem percepcionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoFacturaProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem impuestosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem existenciasProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movimientosDeInventarioToolStripMenuItem;
     }
