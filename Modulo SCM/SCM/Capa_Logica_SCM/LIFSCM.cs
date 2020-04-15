@@ -78,6 +78,28 @@ namespace Capa_Logica_SCM
             return sn.consultaDetalleOrden(sCod);
         }
 
+        //------------------------------------------------------------------------------------------------------INGRESO ENCABEZADO FACTURA PROVEEDOR----------------------------------------------------//
+
+        public OdbcDataReader ingresoEncabezadoFactura(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal)
+        {
+            return sn.InsertarFacturaProveedor(sCOD, sCODOrden, sCODEmpleado, sSerie, sFactura, fecha, sImpuesto, sTotalImpuesto, sTotal);
+        }
+
+        //------------------------------------------------------------------------------------------------------INGRESO DETALLE FACTURA PROVEEDOR----------------------------------------------------//
+
+        public OdbcDataReader InsertarFacturaProveedorDetalle(string sCodEncabezado, string sCodProducto, string sCantidad, string sPrecioUnitario, string sSubTotal)
+        {
+            return sn.InsertarFacturaProveedorDetalle(sCodEncabezado, sCodProducto, sCantidad, sPrecioUnitario, sSubTotal);
+        }
+
+
+        //------------------------------------------------------------------------------------------------------INGRESO MOVIMIENTO GENERAL----------------------------------------------------//
+
+        public OdbcDataReader InsertarMovimientoGeneral(string sCodProducto, string sCantidad, string sFecha, string sDocumento)
+        {
+            return sn.InsertarMovimientoGeneral(sCodProducto, sCantidad, sFecha, sDocumento);
+        }
+
 
 
     }

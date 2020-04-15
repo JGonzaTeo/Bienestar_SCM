@@ -22,7 +22,7 @@ namespace Capa_Datos_SCM
                 OdbcDataReader reader = command.ExecuteReader();
                 reader.Read();
                 camporesultante = reader.GetValue(0).ToString();
-                Console.WriteLine("El resultado es: " + camporesultante);
+                //Console.WriteLine("El resultado es: " + camporesultante);
                 if (String.IsNullOrEmpty(camporesultante))
                     camporesultante = "1";
             }

@@ -17,7 +17,7 @@ namespace Capa_Diseño_SCM
         string usuario;
         LIFSCM logic = new LIFSCM();
         Validaciones v = new Validaciones();
-        int renglon;
+        
         public Frm_BusquedaOrdenCompra(string idusuario)
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace Capa_Diseño_SCM
                 while (mostrar.Read())
                 {
                     string s = mostrar.GetString(0) + mostrar.GetString(1) + mostrar.GetString(2);
-                    Console.WriteLine(s);
+                    //Console.WriteLine(s);
                     Dgv_consultaOrdenCompra.Refresh();
                     Dgv_consultaOrdenCompra.Rows.Add(mostrar.GetString(0), mostrar.GetString(3), mostrar.GetString(4), mostrar.GetString(1), mostrar.GetString(8));
                 }

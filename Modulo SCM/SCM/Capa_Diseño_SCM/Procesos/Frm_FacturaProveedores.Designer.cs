@@ -43,9 +43,6 @@
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Btn_pasarTodo = new System.Windows.Forms.Button();
-            this.Btn_pasaUno = new System.Windows.Forms.Button();
-            this.Btn_pasarUnoI = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_nomPro = new System.Windows.Forms.Label();
             this.txt_Nombreproveedor = new System.Windows.Forms.TextBox();
@@ -57,7 +54,7 @@
             this.lbl_subTo = new System.Windows.Forms.Label();
             this.txt_subTotal = new System.Windows.Forms.TextBox();
             this.lbl_totalImpuesto = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgv_entregado = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,19 +65,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_nit = new System.Windows.Forms.TextBox();
             this.gb_impuestos = new System.Windows.Forms.GroupBox();
+            this.btn_buscarI = new System.Windows.Forms.Button();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.txt_nombreImpuesto = new System.Windows.Forms.TextBox();
             this.lbl_valor = new System.Windows.Forms.Label();
-            this.txt_valor = new System.Windows.Forms.TextBox();
             this.lbl_codImpuesto = new System.Windows.Forms.Label();
+            this.txt_valor = new System.Windows.Forms.TextBox();
             this.txt_codImpuesto = new System.Windows.Forms.TextBox();
             this.gb_encabezado = new System.Windows.Forms.GroupBox();
-            this.gp_detalle = new System.Windows.Forms.GroupBox();
             this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
-            this.btn_buscarI = new System.Windows.Forms.Button();
+            this.gp_detalle = new System.Windows.Forms.GroupBox();
+            this.txt_codFactura = new System.Windows.Forms.TextBox();
+            this.lbl_codFactura = new System.Windows.Forms.Label();
+            this.txt_serie = new System.Windows.Forms.TextBox();
+            this.lbl_serieFactura = new System.Windows.Forms.Label();
+            this.txt_CodFacturaP = new System.Windows.Forms.TextBox();
+            this.lbl_facturaPr = new System.Windows.Forms.Label();
             this.Pnl_nombreForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_pedido)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_entregado)).BeginInit();
             this.gb_impuestos.SuspendLayout();
             this.gb_encabezado.SuspendLayout();
             this.gp_detalle.SuspendLayout();
@@ -153,7 +156,7 @@
             // 
             this.Lbl_codOrden.AutoSize = true;
             this.Lbl_codOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_codOrden.Location = new System.Drawing.Point(644, 35);
+            this.Lbl_codOrden.Location = new System.Drawing.Point(655, 71);
             this.Lbl_codOrden.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_codOrden.Name = "Lbl_codOrden";
             this.Lbl_codOrden.Size = new System.Drawing.Size(183, 18);
@@ -164,7 +167,7 @@
             // 
             this.Txt_Cod.Enabled = false;
             this.Txt_Cod.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Cod.Location = new System.Drawing.Point(841, 32);
+            this.Txt_Cod.Location = new System.Drawing.Point(852, 68);
             this.Txt_Cod.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_Cod.Name = "Txt_Cod";
             this.Txt_Cod.Size = new System.Drawing.Size(156, 24);
@@ -213,8 +216,9 @@
             this.Dgv_pedido.RowHeadersWidth = 51;
             this.Dgv_pedido.RowTemplate.Height = 24;
             this.Dgv_pedido.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_pedido.Size = new System.Drawing.Size(492, 333);
+            this.Dgv_pedido.Size = new System.Drawing.Size(511, 333);
             this.Dgv_pedido.TabIndex = 80;
+            this.Dgv_pedido.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_pedido_CellDoubleClick);
             // 
             // cod
             // 
@@ -240,59 +244,11 @@
             this.sub.Name = "sub";
             this.sub.ReadOnly = true;
             // 
-            // Btn_pasarTodo
-            // 
-            this.Btn_pasarTodo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn_pasarTodo.FlatAppearance.BorderSize = 3;
-            this.Btn_pasarTodo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.Btn_pasarTodo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.Btn_pasarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_pasarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_pasarTodo.Location = new System.Drawing.Point(522, 55);
-            this.Btn_pasarTodo.Margin = new System.Windows.Forms.Padding(2);
-            this.Btn_pasarTodo.Name = "Btn_pasarTodo";
-            this.Btn_pasarTodo.Size = new System.Drawing.Size(47, 33);
-            this.Btn_pasarTodo.TabIndex = 82;
-            this.Btn_pasarTodo.Text = ">>";
-            this.Btn_pasarTodo.UseVisualStyleBackColor = true;
-            // 
-            // Btn_pasaUno
-            // 
-            this.Btn_pasaUno.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn_pasaUno.FlatAppearance.BorderSize = 3;
-            this.Btn_pasaUno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.Btn_pasaUno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.Btn_pasaUno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_pasaUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_pasaUno.Location = new System.Drawing.Point(522, 109);
-            this.Btn_pasaUno.Margin = new System.Windows.Forms.Padding(2);
-            this.Btn_pasaUno.Name = "Btn_pasaUno";
-            this.Btn_pasaUno.Size = new System.Drawing.Size(47, 33);
-            this.Btn_pasaUno.TabIndex = 83;
-            this.Btn_pasaUno.Text = ">";
-            this.Btn_pasaUno.UseVisualStyleBackColor = true;
-            // 
-            // Btn_pasarUnoI
-            // 
-            this.Btn_pasarUnoI.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Btn_pasarUnoI.FlatAppearance.BorderSize = 3;
-            this.Btn_pasarUnoI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.Btn_pasarUnoI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
-            this.Btn_pasarUnoI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_pasarUnoI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_pasarUnoI.Location = new System.Drawing.Point(522, 165);
-            this.Btn_pasarUnoI.Margin = new System.Windows.Forms.Padding(2);
-            this.Btn_pasarUnoI.Name = "Btn_pasarUnoI";
-            this.Btn_pasarUnoI.Size = new System.Drawing.Size(47, 33);
-            this.Btn_pasarUnoI.TabIndex = 84;
-            this.Btn_pasarUnoI.Text = "<";
-            this.Btn_pasarUnoI.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(644, 70);
+            this.label3.Location = new System.Drawing.Point(644, 102);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 18);
@@ -387,7 +343,7 @@
             // 
             this.txt_subTotal.Enabled = false;
             this.txt_subTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_subTotal.Location = new System.Drawing.Point(841, 96);
+            this.txt_subTotal.Location = new System.Drawing.Point(917, 393);
             this.txt_subTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txt_subTotal.Name = "txt_subTotal";
             this.txt_subTotal.Size = new System.Drawing.Size(156, 24);
@@ -397,37 +353,39 @@
             // 
             this.lbl_totalImpuesto.AutoSize = true;
             this.lbl_totalImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_totalImpuesto.Location = new System.Drawing.Point(644, 102);
+            this.lbl_totalImpuesto.Location = new System.Drawing.Point(720, 399);
             this.lbl_totalImpuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_totalImpuesto.Name = "lbl_totalImpuesto";
             this.lbl_totalImpuesto.Size = new System.Drawing.Size(75, 18);
             this.lbl_totalImpuesto.TabIndex = 94;
             this.lbl_totalImpuesto.Text = "Sub Total:";
             // 
-            // dataGridView1
+            // Dgv_entregado
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_entregado.AllowUserToAddRows = false;
+            this.Dgv_entregado.AllowUserToDeleteRows = false;
+            this.Dgv_entregado.AllowUserToResizeColumns = false;
+            this.Dgv_entregado.AllowUserToResizeRows = false;
+            this.Dgv_entregado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_entregado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_entregado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView1.Location = new System.Drawing.Point(581, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(492, 333);
-            this.dataGridView1.TabIndex = 95;
+            this.Dgv_entregado.Location = new System.Drawing.Point(551, 42);
+            this.Dgv_entregado.Margin = new System.Windows.Forms.Padding(2);
+            this.Dgv_entregado.MultiSelect = false;
+            this.Dgv_entregado.Name = "Dgv_entregado";
+            this.Dgv_entregado.ReadOnly = true;
+            this.Dgv_entregado.RowHeadersVisible = false;
+            this.Dgv_entregado.RowHeadersWidth = 51;
+            this.Dgv_entregado.RowTemplate.Height = 24;
+            this.Dgv_entregado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_entregado.Size = new System.Drawing.Size(522, 333);
+            this.Dgv_entregado.TabIndex = 95;
+            this.Dgv_entregado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_entregado_CellDoubleClick);
+            this.Dgv_entregado.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -457,7 +415,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(794, 22);
+            this.label8.Location = new System.Drawing.Point(777, 22);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 18);
@@ -468,7 +426,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(183, 22);
+            this.label7.Location = new System.Drawing.Point(198, 22);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 18);
@@ -490,6 +448,7 @@
             this.BTn_guardar.TabIndex = 86;
             this.BTn_guardar.Text = "Guardar";
             this.BTn_guardar.UseVisualStyleBackColor = true;
+            this.BTn_guardar.Click += new System.EventHandler(this.BTn_guardar_Click);
             // 
             // label2
             // 
@@ -531,6 +490,17 @@
             this.gb_impuestos.TabStop = false;
             this.gb_impuestos.Text = "Impuestos";
             // 
+            // btn_buscarI
+            // 
+            this.btn_buscarI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarI.BackgroundImage")));
+            this.btn_buscarI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarI.Location = new System.Drawing.Point(445, 18);
+            this.btn_buscarI.Name = "btn_buscarI";
+            this.btn_buscarI.Size = new System.Drawing.Size(32, 32);
+            this.btn_buscarI.TabIndex = 105;
+            this.btn_buscarI.UseVisualStyleBackColor = true;
+            this.btn_buscarI.Click += new System.EventHandler(this.btn_buscarI_Click);
+            // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
@@ -563,16 +533,6 @@
             this.lbl_valor.TabIndex = 102;
             this.lbl_valor.Text = "Valor Impuesto:";
             // 
-            // txt_valor
-            // 
-            this.txt_valor.Enabled = false;
-            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_valor.Location = new System.Drawing.Point(841, 19);
-            this.txt_valor.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_valor.Name = "txt_valor";
-            this.txt_valor.Size = new System.Drawing.Size(156, 24);
-            this.txt_valor.TabIndex = 101;
-            // 
             // lbl_codImpuesto
             // 
             this.lbl_codImpuesto.AutoSize = true;
@@ -583,6 +543,16 @@
             this.lbl_codImpuesto.Size = new System.Drawing.Size(145, 18);
             this.lbl_codImpuesto.TabIndex = 100;
             this.lbl_codImpuesto.Text = "Codigo de Impuesto:";
+            // 
+            // txt_valor
+            // 
+            this.txt_valor.Enabled = false;
+            this.txt_valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_valor.Location = new System.Drawing.Point(841, 19);
+            this.txt_valor.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_valor.Name = "txt_valor";
+            this.txt_valor.Size = new System.Drawing.Size(156, 24);
+            this.txt_valor.TabIndex = 101;
             // 
             // txt_codImpuesto
             // 
@@ -596,76 +566,129 @@
             // 
             // gb_encabezado
             // 
+            this.gb_encabezado.Controls.Add(this.txt_serie);
+            this.gb_encabezado.Controls.Add(this.lbl_serieFactura);
+            this.gb_encabezado.Controls.Add(this.txt_codFactura);
+            this.gb_encabezado.Controls.Add(this.lbl_codFactura);
             this.gb_encabezado.Controls.Add(this.dtp_fecha);
             this.gb_encabezado.Controls.Add(this.label2);
             this.gb_encabezado.Controls.Add(this.lbl_codU);
             this.gb_encabezado.Controls.Add(this.txt_CODproveedor);
             this.gb_encabezado.Controls.Add(this.txt_nit);
             this.gb_encabezado.Controls.Add(this.txt_total);
-            this.gb_encabezado.Controls.Add(this.Lbl_codOrden);
             this.gb_encabezado.Controls.Add(this.txt_Nombreproveedor);
-            this.gb_encabezado.Controls.Add(this.Txt_Cod);
             this.gb_encabezado.Controls.Add(this.lbl_codPro);
             this.gb_encabezado.Controls.Add(this.lbl_total);
             this.gb_encabezado.Controls.Add(this.label3);
             this.gb_encabezado.Controls.Add(this.txt_CODUsuario);
-            this.gb_encabezado.Controls.Add(this.lbl_totalImpuesto);
             this.gb_encabezado.Controls.Add(this.lbl_nomPro);
-            this.gb_encabezado.Controls.Add(this.txt_subTotal);
             this.gb_encabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_encabezado.Location = new System.Drawing.Point(11, 86);
+            this.gb_encabezado.Location = new System.Drawing.Point(11, 101);
             this.gb_encabezado.Name = "gb_encabezado";
-            this.gb_encabezado.Size = new System.Drawing.Size(1086, 177);
+            this.gb_encabezado.Size = new System.Drawing.Size(1086, 162);
             this.gb_encabezado.TabIndex = 96;
             this.gb_encabezado.TabStop = false;
             this.gb_encabezado.Text = "Encabezado";
             // 
-            // gp_detalle
-            // 
-            this.gp_detalle.Controls.Add(this.dataGridView1);
-            this.gp_detalle.Controls.Add(this.label7);
-            this.gp_detalle.Controls.Add(this.label8);
-            this.gp_detalle.Controls.Add(this.Btn_pasaUno);
-            this.gp_detalle.Controls.Add(this.Btn_pasarTodo);
-            this.gp_detalle.Controls.Add(this.Dgv_pedido);
-            this.gp_detalle.Controls.Add(this.Btn_pasarUnoI);
-            this.gp_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gp_detalle.Location = new System.Drawing.Point(11, 401);
-            this.gp_detalle.Name = "gp_detalle";
-            this.gp_detalle.Size = new System.Drawing.Size(1086, 422);
-            this.gp_detalle.TabIndex = 96;
-            this.gp_detalle.TabStop = false;
-            this.gp_detalle.Text = "Detalle";
-            // 
             // dtp_fecha
             // 
-            this.dtp_fecha.Location = new System.Drawing.Point(841, 64);
+            this.dtp_fecha.Location = new System.Drawing.Point(841, 96);
             this.dtp_fecha.Name = "dtp_fecha";
             this.dtp_fecha.Size = new System.Drawing.Size(156, 26);
             this.dtp_fecha.TabIndex = 99;
             this.dtp_fecha.ValueChanged += new System.EventHandler(this.dtp_fecha_ValueChanged);
             // 
-            // btn_buscarI
+            // gp_detalle
             // 
-            this.btn_buscarI.BackgroundImage = global::Capa_Diseño_SCM.Properties.Resources.icons8_espionaje_42;
-            this.btn_buscarI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscarI.Location = new System.Drawing.Point(445, 18);
-            this.btn_buscarI.Name = "btn_buscarI";
-            this.btn_buscarI.Size = new System.Drawing.Size(32, 32);
-            this.btn_buscarI.TabIndex = 105;
-            this.btn_buscarI.UseVisualStyleBackColor = true;
-            this.btn_buscarI.Click += new System.EventHandler(this.btn_buscarI_Click);
+            this.gp_detalle.Controls.Add(this.Dgv_entregado);
+            this.gp_detalle.Controls.Add(this.label7);
+            this.gp_detalle.Controls.Add(this.label8);
+            this.gp_detalle.Controls.Add(this.Dgv_pedido);
+            this.gp_detalle.Controls.Add(this.txt_subTotal);
+            this.gp_detalle.Controls.Add(this.lbl_totalImpuesto);
+            this.gp_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gp_detalle.Location = new System.Drawing.Point(11, 401);
+            this.gp_detalle.Name = "gp_detalle";
+            this.gp_detalle.Size = new System.Drawing.Size(1086, 434);
+            this.gp_detalle.TabIndex = 96;
+            this.gp_detalle.TabStop = false;
+            this.gp_detalle.Text = "Detalle";
+            // 
+            // txt_codFactura
+            // 
+            this.txt_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codFactura.Location = new System.Drawing.Point(841, 67);
+            this.txt_codFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codFactura.Name = "txt_codFactura";
+            this.txt_codFactura.Size = new System.Drawing.Size(156, 24);
+            this.txt_codFactura.TabIndex = 100;
+            // 
+            // lbl_codFactura
+            // 
+            this.lbl_codFactura.AutoSize = true;
+            this.lbl_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codFactura.Location = new System.Drawing.Point(644, 70);
+            this.lbl_codFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_codFactura.Name = "lbl_codFactura";
+            this.lbl_codFactura.Size = new System.Drawing.Size(187, 18);
+            this.lbl_codFactura.TabIndex = 101;
+            this.lbl_codFactura.Text = "Codigo Factura Proveedor:";
+            // 
+            // txt_serie
+            // 
+            this.txt_serie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_serie.Location = new System.Drawing.Point(841, 35);
+            this.txt_serie.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_serie.Name = "txt_serie";
+            this.txt_serie.Size = new System.Drawing.Size(156, 24);
+            this.txt_serie.TabIndex = 102;
+            // 
+            // lbl_serieFactura
+            // 
+            this.lbl_serieFactura.AutoSize = true;
+            this.lbl_serieFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_serieFactura.Location = new System.Drawing.Point(644, 38);
+            this.lbl_serieFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_serieFactura.Name = "lbl_serieFactura";
+            this.lbl_serieFactura.Size = new System.Drawing.Size(100, 18);
+            this.lbl_serieFactura.TabIndex = 103;
+            this.lbl_serieFactura.Text = "Serie Factura:";
+            // 
+            // txt_CodFacturaP
+            // 
+            this.txt_CodFacturaP.Enabled = false;
+            this.txt_CodFacturaP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CodFacturaP.Location = new System.Drawing.Point(141, 62);
+            this.txt_CodFacturaP.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_CodFacturaP.Name = "txt_CodFacturaP";
+            this.txt_CodFacturaP.Size = new System.Drawing.Size(156, 24);
+            this.txt_CodFacturaP.TabIndex = 97;
+            // 
+            // lbl_facturaPr
+            // 
+            this.lbl_facturaPr.AutoSize = true;
+            this.lbl_facturaPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_facturaPr.Location = new System.Drawing.Point(23, 68);
+            this.lbl_facturaPr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_facturaPr.Name = "lbl_facturaPr";
+            this.lbl_facturaPr.Size = new System.Drawing.Size(114, 18);
+            this.lbl_facturaPr.TabIndex = 98;
+            this.lbl_facturaPr.Text = "Codigo Factura:";
             // 
             // Frm_FacturaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1109, 882);
+            this.Controls.Add(this.txt_CodFacturaP);
+            this.Controls.Add(this.lbl_facturaPr);
             this.Controls.Add(this.gp_detalle);
             this.Controls.Add(this.gb_encabezado);
             this.Controls.Add(this.gb_impuestos);
             this.Controls.Add(this.BTn_guardar);
             this.Controls.Add(this.Pnl_nombreForm);
+            this.Controls.Add(this.Txt_Cod);
+            this.Controls.Add(this.Lbl_codOrden);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_FacturaProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -674,7 +697,7 @@
             this.Pnl_nombreForm.ResumeLayout(false);
             this.Pnl_nombreForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_pedido)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_entregado)).EndInit();
             this.gb_impuestos.ResumeLayout(false);
             this.gb_impuestos.PerformLayout();
             this.gb_encabezado.ResumeLayout(false);
@@ -682,6 +705,7 @@
             this.gp_detalle.ResumeLayout(false);
             this.gp_detalle.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -697,9 +721,6 @@
         private System.Windows.Forms.Label lbl_codPro;
         private System.Windows.Forms.TextBox txt_CODproveedor;
         public System.Windows.Forms.DataGridView Dgv_pedido;
-        private System.Windows.Forms.Button Btn_pasarTodo;
-        private System.Windows.Forms.Button Btn_pasaUno;
-        private System.Windows.Forms.Button Btn_pasarUnoI;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_nomPro;
         private System.Windows.Forms.TextBox txt_Nombreproveedor;
@@ -714,7 +735,7 @@
         private System.Windows.Forms.Label lbl_totalImpuesto;
         private System.Windows.Forms.TextBox txt_totalImpuesto;
         private System.Windows.Forms.Label lbl_subTo;
-        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView Dgv_entregado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_nit;
         private System.Windows.Forms.DataGridViewTextBoxColumn cod;
@@ -736,5 +757,11 @@
         private System.Windows.Forms.TextBox txt_nombreImpuesto;
         private System.Windows.Forms.DateTimePicker dtp_fecha;
         private System.Windows.Forms.Button btn_buscarI;
+        private System.Windows.Forms.TextBox txt_serie;
+        private System.Windows.Forms.Label lbl_serieFactura;
+        private System.Windows.Forms.TextBox txt_codFactura;
+        private System.Windows.Forms.Label lbl_codFactura;
+        private System.Windows.Forms.TextBox txt_CodFacturaP;
+        private System.Windows.Forms.Label lbl_facturaPr;
     }
 }

@@ -111,7 +111,6 @@ namespace Capa_Datos_SCM
                 OdbcCommand command = new OdbcCommand("select P.pkidProveedor, P.nombre, P.nit from ordencomrpaencabezado O left join  proveedor P on O.fkIdProveedor = P.pkidProveedor where O.pkIdOrdenCompraEncabezado = "+ sCOD +";", cn.conexionbd());
                 OdbcDataReader reader = command.ExecuteReader();
                 reader.Read();
-                //Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
                 return reader;
             }
             catch (Exception err)
@@ -140,23 +139,62 @@ namespace Capa_Datos_SCM
                 Console.WriteLine(err.Message);
                 return null;
             }
-            /*
+
+        }
+
+        //---------------------------------------------------------------INSERT ENCABEZADO FACTURA DE COMPRA ------------------------------------------------------------------------------------------//
+        public OdbcDataReader InsertarFacturaProveedor(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal)
+        {
             try
             {
-                OdbcCommand command = new OdbcCommand(" SELECT fkIdProducto, cantidad, subTotal, estado FROM ordencompradetalle WHERE fkIdordenCompraEncabezado = " + sCOD + ";", cn.conexionbd());
-                OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
-                //Console.WriteLine(reader.GetString(0)+ reader.GetString(1) + reader.GetString(2));
-                return reader;
+                cn.conexionbd();
+                string texto = "Factura " + " " + sSerie + " " +sFactura;
+                string consulta = "insert into facturaproveedorencabezado values(" + sCOD + ","+ sCODOrden + "," + sCODEmpleado + ", '" + texto +"' , '" +  sSerie + "', "+ sFactura + ", '" + fecha + "'," + sImpuesto + "," + sTotalImpuesto + "," + sTotal + ",1)";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
             }
             catch (Exception err)
             {
-
                 Console.WriteLine(err.Message);
                 return null;
             }
-            */
+        }
 
+        //---------------------------------------------------------------INSERT  FACTURA DE COMPRA DETALLE------------------------------------------------------------------------------------------//
+        public OdbcDataReader InsertarFacturaProveedorDetalle(string sCodEncabezado, string sCodProducto, string sCantidad, string sPrecioUnitario, string sSubTotal)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into facturaproveedordetalle values(" + 0 + "," + sCodEncabezado + "," + sCodProducto + ","+ sCantidad + "," + sPrecioUnitario + "," + sSubTotal + ",1);";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        //---------------------------------------------------------------INSERT MOVIMIENTO GENERAL------------------------------------------------------------------------------------------//
+        public OdbcDataReader InsertarMovimientoGeneral(string sCodProducto, string sCantidad, string sFecha, string sDocumento)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into movimiento_genera values (" + 0 + "," + sCodProducto + "," +"'Factura Compra'" + ",'" + sDocumento + "'," + sCantidad + "," + sFecha + ");";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
         }
 
     }
