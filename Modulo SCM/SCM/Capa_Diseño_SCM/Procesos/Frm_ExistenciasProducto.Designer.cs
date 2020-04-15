@@ -49,7 +49,8 @@
             this.Lbl_proMovInt = new System.Windows.Forms.Label();
             this.Lbl_exisMovInt = new System.Windows.Forms.Label();
             this.Dgv_existencias = new System.Windows.Forms.DataGridView();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Entradas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Minimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +69,7 @@
             this.Pnl_nombreForm.Location = new System.Drawing.Point(0, 0);
             this.Pnl_nombreForm.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_nombreForm.Name = "Pnl_nombreForm";
-            this.Pnl_nombreForm.Size = new System.Drawing.Size(544, 51);
+            this.Pnl_nombreForm.Size = new System.Drawing.Size(641, 51);
             this.Pnl_nombreForm.TabIndex = 1;
             // 
             // Btn_Ayuda
@@ -76,7 +77,7 @@
             this.Btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Ayuda.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Btn_Ayuda.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Ayuda.Image")));
-            this.Btn_Ayuda.Location = new System.Drawing.Point(459, 12);
+            this.Btn_Ayuda.Location = new System.Drawing.Point(545, 12);
             this.Btn_Ayuda.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Ayuda.Name = "Btn_Ayuda";
             this.Btn_Ayuda.Size = new System.Drawing.Size(33, 31);
@@ -89,7 +90,7 @@
             this.Btn_minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_minimizar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Btn_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_minimizar.Image")));
-            this.Btn_minimizar.Location = new System.Drawing.Point(424, 12);
+            this.Btn_minimizar.Location = new System.Drawing.Point(510, 12);
             this.Btn_minimizar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_minimizar.Name = "Btn_minimizar";
             this.Btn_minimizar.Size = new System.Drawing.Size(33, 31);
@@ -114,7 +115,7 @@
             this.Btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_cerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_cerrar.Image")));
-            this.Btn_cerrar.Location = new System.Drawing.Point(497, 12);
+            this.Btn_cerrar.Location = new System.Drawing.Point(583, 12);
             this.Btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_cerrar.Name = "Btn_cerrar";
             this.Btn_cerrar.Size = new System.Drawing.Size(33, 31);
@@ -136,22 +137,23 @@
             this.Txt_productoMovInt.Enabled = false;
             this.Txt_productoMovInt.Location = new System.Drawing.Point(84, 71);
             this.Txt_productoMovInt.Name = "Txt_productoMovInt";
-            this.Txt_productoMovInt.Size = new System.Drawing.Size(299, 20);
+            this.Txt_productoMovInt.Size = new System.Drawing.Size(405, 20);
             this.Txt_productoMovInt.TabIndex = 4;
             // 
             // Btn_buscar
             // 
-            this.Btn_buscar.Location = new System.Drawing.Point(406, 68);
+            this.Btn_buscar.Location = new System.Drawing.Point(522, 69);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(75, 23);
             this.Btn_buscar.TabIndex = 5;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Lbl_entMovInt
             // 
             this.Lbl_entMovInt.AutoSize = true;
-            this.Lbl_entMovInt.Location = new System.Drawing.Point(21, 123);
+            this.Lbl_entMovInt.Location = new System.Drawing.Point(95, 119);
             this.Lbl_entMovInt.Name = "Lbl_entMovInt";
             this.Lbl_entMovInt.Size = new System.Drawing.Size(44, 13);
             this.Lbl_entMovInt.TabIndex = 5;
@@ -160,7 +162,7 @@
             // Lbl_salMovInt
             // 
             this.Lbl_salMovInt.AutoSize = true;
-            this.Lbl_salMovInt.Location = new System.Drawing.Point(218, 123);
+            this.Lbl_salMovInt.Location = new System.Drawing.Point(292, 119);
             this.Lbl_salMovInt.Name = "Lbl_salMovInt";
             this.Lbl_salMovInt.Size = new System.Drawing.Size(36, 13);
             this.Lbl_salMovInt.TabIndex = 6;
@@ -169,7 +171,7 @@
             // Lbl_minMovInt
             // 
             this.Lbl_minMovInt.AutoSize = true;
-            this.Lbl_minMovInt.Location = new System.Drawing.Point(21, 175);
+            this.Lbl_minMovInt.Location = new System.Drawing.Point(95, 171);
             this.Lbl_minMovInt.Name = "Lbl_minMovInt";
             this.Lbl_minMovInt.Size = new System.Drawing.Size(42, 13);
             this.Lbl_minMovInt.TabIndex = 7;
@@ -178,7 +180,7 @@
             // Lbl_maxMovInt
             // 
             this.Lbl_maxMovInt.AutoSize = true;
-            this.Lbl_maxMovInt.Location = new System.Drawing.Point(218, 175);
+            this.Lbl_maxMovInt.Location = new System.Drawing.Point(292, 171);
             this.Lbl_maxMovInt.Name = "Lbl_maxMovInt";
             this.Lbl_maxMovInt.Size = new System.Drawing.Size(43, 13);
             this.Lbl_maxMovInt.TabIndex = 8;
@@ -186,40 +188,45 @@
             // 
             // Btn_agregar
             // 
-            this.Btn_agregar.Location = new System.Drawing.Point(406, 142);
+            this.Btn_agregar.Location = new System.Drawing.Point(522, 144);
             this.Btn_agregar.Name = "Btn_agregar";
             this.Btn_agregar.Size = new System.Drawing.Size(75, 23);
             this.Btn_agregar.TabIndex = 10;
             this.Btn_agregar.Text = "Agregar";
             this.Btn_agregar.UseVisualStyleBackColor = true;
+            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
             // 
             // Txt_entrada
             // 
-            this.Txt_entrada.Location = new System.Drawing.Point(84, 123);
+            this.Txt_entrada.Location = new System.Drawing.Point(158, 119);
             this.Txt_entrada.Name = "Txt_entrada";
             this.Txt_entrada.Size = new System.Drawing.Size(100, 20);
             this.Txt_entrada.TabIndex = 6;
+            this.Txt_entrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_entrada_KeyPress);
             // 
             // Txt_minimo
             // 
-            this.Txt_minimo.Location = new System.Drawing.Point(84, 172);
+            this.Txt_minimo.Location = new System.Drawing.Point(158, 168);
             this.Txt_minimo.Name = "Txt_minimo";
             this.Txt_minimo.Size = new System.Drawing.Size(100, 20);
             this.Txt_minimo.TabIndex = 8;
+            this.Txt_minimo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_minimo_KeyPress);
             // 
             // Txt_salida
             // 
-            this.Txt_salida.Location = new System.Drawing.Point(283, 123);
+            this.Txt_salida.Location = new System.Drawing.Point(357, 119);
             this.Txt_salida.Name = "Txt_salida";
             this.Txt_salida.Size = new System.Drawing.Size(100, 20);
             this.Txt_salida.TabIndex = 7;
+            this.Txt_salida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_salida_KeyPress);
             // 
             // Txt_maximo
             // 
-            this.Txt_maximo.Location = new System.Drawing.Point(283, 172);
+            this.Txt_maximo.Location = new System.Drawing.Point(357, 168);
             this.Txt_maximo.Name = "Txt_maximo";
             this.Txt_maximo.Size = new System.Drawing.Size(100, 20);
             this.Txt_maximo.TabIndex = 9;
+            this.Txt_maximo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_maximo_KeyPress);
             // 
             // Lbl_proMovInt
             // 
@@ -245,7 +252,8 @@
             // 
             this.Dgv_existencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_existencias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Producto,
+            this.CodigoProducto,
+            this.NombreProducto,
             this.Entradas,
             this.Salidas,
             this.Minimo,
@@ -253,13 +261,18 @@
             this.Dgv_existencias.Location = new System.Drawing.Point(12, 258);
             this.Dgv_existencias.Name = "Dgv_existencias";
             this.Dgv_existencias.RowHeadersVisible = false;
-            this.Dgv_existencias.Size = new System.Drawing.Size(506, 150);
+            this.Dgv_existencias.Size = new System.Drawing.Size(604, 150);
             this.Dgv_existencias.TabIndex = 16;
             // 
-            // Producto
+            // CodigoProducto
             // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
+            this.CodigoProducto.HeaderText = "Codigo Producto";
+            this.CodigoProducto.Name = "CodigoProducto";
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.HeaderText = "Nombre Producto";
+            this.NombreProducto.Name = "NombreProducto";
             // 
             // Entradas
             // 
@@ -285,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 423);
+            this.ClientSize = new System.Drawing.Size(640, 423);
             this.Controls.Add(this.Dgv_existencias);
             this.Controls.Add(this.Lbl_exisMovInt);
             this.Controls.Add(this.Lbl_proMovInt);
@@ -336,7 +349,8 @@
         private System.Windows.Forms.Label Lbl_proMovInt;
         private System.Windows.Forms.Label Lbl_exisMovInt;
         private System.Windows.Forms.DataGridView Dgv_existencias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Entradas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salidas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Minimo;
