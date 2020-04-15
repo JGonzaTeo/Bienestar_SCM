@@ -80,9 +80,9 @@ namespace Capa_Logica_SCM
 
         //------------------------------------------------------------------------------------------------------INGRESO ENCABEZADO FACTURA PROVEEDOR----------------------------------------------------//
 
-        public OdbcDataReader ingresoEncabezadoFactura(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal)
+        public OdbcDataReader ingresoEncabezadoFactura(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal, string sDescuento)
         {
-            return sn.InsertarFacturaProveedor(sCOD, sCODOrden, sCODEmpleado, sSerie, sFactura, fecha, sImpuesto, sTotalImpuesto, sTotal);
+            return sn.InsertarFacturaProveedor(sCOD, sCODOrden, sCODEmpleado, sSerie, sFactura, fecha, sImpuesto, sTotalImpuesto, sTotal, sDescuento);
         }
 
         //------------------------------------------------------------------------------------------------------INGRESO DETALLE FACTURA PROVEEDOR----------------------------------------------------//

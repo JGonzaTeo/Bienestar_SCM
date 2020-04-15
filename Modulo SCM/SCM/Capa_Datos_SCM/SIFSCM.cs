@@ -143,13 +143,13 @@ namespace Capa_Datos_SCM
         }
 
         //---------------------------------------------------------------INSERT ENCABEZADO FACTURA DE COMPRA ------------------------------------------------------------------------------------------//
-        public OdbcDataReader InsertarFacturaProveedor(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal)
+        public OdbcDataReader InsertarFacturaProveedor(string sCOD, string sCODOrden, string sCODEmpleado, string sSerie, string sFactura, string fecha, string sImpuesto, string sTotalImpuesto, string sTotal, string sDescuento)
         {
             try
             {
                 cn.conexionbd();
                 string texto = "Factura " + " " + sSerie + " " +sFactura;
-                string consulta = "insert into facturaproveedorencabezado values(" + sCOD + ","+ sCODOrden + "," + sCODEmpleado + ", '" + texto +"' , '" +  sSerie + "', "+ sFactura + ", '" + fecha + "'," + sImpuesto + "," + sTotalImpuesto + "," + sTotal + ",1)";
+                string consulta = "insert into facturaproveedorencabezado values(" + sCOD + ","+ sCODOrden + "," + sCODEmpleado + ", '" + texto +"' , '" +  sSerie + "', '"+ sFactura + "', '" + fecha + "'," + sImpuesto + "," + sTotalImpuesto + "," + sTotal + ","+sDescuento +",1)";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -185,7 +185,7 @@ namespace Capa_Datos_SCM
             try
             {
                 cn.conexionbd();
-                string consulta = "insert into movimiento_genera values (" + 0 + "," + sCodProducto + "," +"'Factura Compra'" + ",'" + sDocumento + "'," + sCantidad + "," + sFecha + ");";
+                string consulta = "insert into movimiento_general values (" + 0 + "," + sCodProducto + "," +"'Factura Compra'" + ",'" + sDocumento + "'," + sCantidad + ",'" + sFecha + "');";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
