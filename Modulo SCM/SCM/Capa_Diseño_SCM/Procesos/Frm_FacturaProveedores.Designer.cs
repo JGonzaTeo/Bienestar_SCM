@@ -73,14 +73,16 @@
             this.txt_valor = new System.Windows.Forms.TextBox();
             this.txt_codImpuesto = new System.Windows.Forms.TextBox();
             this.gb_encabezado = new System.Windows.Forms.GroupBox();
-            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
-            this.gp_detalle = new System.Windows.Forms.GroupBox();
-            this.txt_codFactura = new System.Windows.Forms.TextBox();
-            this.lbl_codFactura = new System.Windows.Forms.Label();
             this.txt_serie = new System.Windows.Forms.TextBox();
             this.lbl_serieFactura = new System.Windows.Forms.Label();
+            this.txt_codFactura = new System.Windows.Forms.TextBox();
+            this.lbl_codFactura = new System.Windows.Forms.Label();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.gp_detalle = new System.Windows.Forms.GroupBox();
             this.txt_CodFacturaP = new System.Windows.Forms.TextBox();
             this.lbl_facturaPr = new System.Windows.Forms.Label();
+            this.txt_descuento = new System.Windows.Forms.TextBox();
+            this.lbl_descuento = new System.Windows.Forms.Label();
             this.Pnl_nombreForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_pedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_entregado)).BeginInit();
@@ -301,7 +303,7 @@
             // 
             this.lbl_total.AutoSize = true;
             this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total.Location = new System.Drawing.Point(644, 132);
+            this.lbl_total.Location = new System.Drawing.Point(720, 427);
             this.lbl_total.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total.Name = "lbl_total";
             this.lbl_total.Size = new System.Drawing.Size(45, 18);
@@ -312,7 +314,7 @@
             // 
             this.txt_total.Enabled = false;
             this.txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total.Location = new System.Drawing.Point(841, 129);
+            this.txt_total.Location = new System.Drawing.Point(917, 424);
             this.txt_total.Margin = new System.Windows.Forms.Padding(2);
             this.txt_total.Name = "txt_total";
             this.txt_total.Size = new System.Drawing.Size(156, 24);
@@ -343,7 +345,7 @@
             // 
             this.txt_subTotal.Enabled = false;
             this.txt_subTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_subTotal.Location = new System.Drawing.Point(917, 393);
+            this.txt_subTotal.Location = new System.Drawing.Point(917, 390);
             this.txt_subTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txt_subTotal.Name = "txt_subTotal";
             this.txt_subTotal.Size = new System.Drawing.Size(156, 24);
@@ -353,7 +355,7 @@
             // 
             this.lbl_totalImpuesto.AutoSize = true;
             this.lbl_totalImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_totalImpuesto.Location = new System.Drawing.Point(720, 399);
+            this.lbl_totalImpuesto.Location = new System.Drawing.Point(720, 396);
             this.lbl_totalImpuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_totalImpuesto.Name = "lbl_totalImpuesto";
             this.lbl_totalImpuesto.Size = new System.Drawing.Size(75, 18);
@@ -441,7 +443,7 @@
             this.BTn_guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.BTn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTn_guardar.Location = new System.Drawing.Point(929, 840);
+            this.BTn_guardar.Location = new System.Drawing.Point(928, 878);
             this.BTn_guardar.Margin = new System.Windows.Forms.Padding(2);
             this.BTn_guardar.Name = "BTn_guardar";
             this.BTn_guardar.Size = new System.Drawing.Size(169, 33);
@@ -566,7 +568,9 @@
             // 
             // gb_encabezado
             // 
+            this.gb_encabezado.Controls.Add(this.txt_descuento);
             this.gb_encabezado.Controls.Add(this.txt_serie);
+            this.gb_encabezado.Controls.Add(this.lbl_descuento);
             this.gb_encabezado.Controls.Add(this.lbl_serieFactura);
             this.gb_encabezado.Controls.Add(this.txt_codFactura);
             this.gb_encabezado.Controls.Add(this.lbl_codFactura);
@@ -575,10 +579,8 @@
             this.gb_encabezado.Controls.Add(this.lbl_codU);
             this.gb_encabezado.Controls.Add(this.txt_CODproveedor);
             this.gb_encabezado.Controls.Add(this.txt_nit);
-            this.gb_encabezado.Controls.Add(this.txt_total);
             this.gb_encabezado.Controls.Add(this.txt_Nombreproveedor);
             this.gb_encabezado.Controls.Add(this.lbl_codPro);
-            this.gb_encabezado.Controls.Add(this.lbl_total);
             this.gb_encabezado.Controls.Add(this.label3);
             this.gb_encabezado.Controls.Add(this.txt_CODUsuario);
             this.gb_encabezado.Controls.Add(this.lbl_nomPro);
@@ -589,6 +591,48 @@
             this.gb_encabezado.TabIndex = 96;
             this.gb_encabezado.TabStop = false;
             this.gb_encabezado.Text = "Encabezado";
+            // 
+            // txt_serie
+            // 
+            this.txt_serie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_serie.Location = new System.Drawing.Point(841, 35);
+            this.txt_serie.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_serie.Name = "txt_serie";
+            this.txt_serie.Size = new System.Drawing.Size(156, 24);
+            this.txt_serie.TabIndex = 102;
+            this.txt_serie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_serie_KeyPress);
+            // 
+            // lbl_serieFactura
+            // 
+            this.lbl_serieFactura.AutoSize = true;
+            this.lbl_serieFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_serieFactura.Location = new System.Drawing.Point(644, 38);
+            this.lbl_serieFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_serieFactura.Name = "lbl_serieFactura";
+            this.lbl_serieFactura.Size = new System.Drawing.Size(100, 18);
+            this.lbl_serieFactura.TabIndex = 103;
+            this.lbl_serieFactura.Text = "Serie Factura:";
+            // 
+            // txt_codFactura
+            // 
+            this.txt_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_codFactura.Location = new System.Drawing.Point(841, 67);
+            this.txt_codFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codFactura.Name = "txt_codFactura";
+            this.txt_codFactura.Size = new System.Drawing.Size(156, 24);
+            this.txt_codFactura.TabIndex = 100;
+            this.txt_codFactura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codFactura_KeyPress);
+            // 
+            // lbl_codFactura
+            // 
+            this.lbl_codFactura.AutoSize = true;
+            this.lbl_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codFactura.Location = new System.Drawing.Point(644, 70);
+            this.lbl_codFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_codFactura.Name = "lbl_codFactura";
+            this.lbl_codFactura.Size = new System.Drawing.Size(187, 18);
+            this.lbl_codFactura.TabIndex = 101;
+            this.lbl_codFactura.Text = "Codigo Factura Proveedor:";
             // 
             // dtp_fecha
             // 
@@ -606,53 +650,15 @@
             this.gp_detalle.Controls.Add(this.Dgv_pedido);
             this.gp_detalle.Controls.Add(this.txt_subTotal);
             this.gp_detalle.Controls.Add(this.lbl_totalImpuesto);
+            this.gp_detalle.Controls.Add(this.txt_total);
+            this.gp_detalle.Controls.Add(this.lbl_total);
             this.gp_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gp_detalle.Location = new System.Drawing.Point(11, 401);
             this.gp_detalle.Name = "gp_detalle";
-            this.gp_detalle.Size = new System.Drawing.Size(1086, 434);
+            this.gp_detalle.Size = new System.Drawing.Size(1086, 459);
             this.gp_detalle.TabIndex = 96;
             this.gp_detalle.TabStop = false;
             this.gp_detalle.Text = "Detalle";
-            // 
-            // txt_codFactura
-            // 
-            this.txt_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_codFactura.Location = new System.Drawing.Point(841, 67);
-            this.txt_codFactura.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_codFactura.Name = "txt_codFactura";
-            this.txt_codFactura.Size = new System.Drawing.Size(156, 24);
-            this.txt_codFactura.TabIndex = 100;
-            // 
-            // lbl_codFactura
-            // 
-            this.lbl_codFactura.AutoSize = true;
-            this.lbl_codFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_codFactura.Location = new System.Drawing.Point(644, 70);
-            this.lbl_codFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_codFactura.Name = "lbl_codFactura";
-            this.lbl_codFactura.Size = new System.Drawing.Size(187, 18);
-            this.lbl_codFactura.TabIndex = 101;
-            this.lbl_codFactura.Text = "Codigo Factura Proveedor:";
-            // 
-            // txt_serie
-            // 
-            this.txt_serie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_serie.Location = new System.Drawing.Point(841, 35);
-            this.txt_serie.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_serie.Name = "txt_serie";
-            this.txt_serie.Size = new System.Drawing.Size(156, 24);
-            this.txt_serie.TabIndex = 102;
-            // 
-            // lbl_serieFactura
-            // 
-            this.lbl_serieFactura.AutoSize = true;
-            this.lbl_serieFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_serieFactura.Location = new System.Drawing.Point(644, 38);
-            this.lbl_serieFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_serieFactura.Name = "lbl_serieFactura";
-            this.lbl_serieFactura.Size = new System.Drawing.Size(100, 18);
-            this.lbl_serieFactura.TabIndex = 103;
-            this.lbl_serieFactura.Text = "Serie Factura:";
             // 
             // txt_CodFacturaP
             // 
@@ -675,11 +681,33 @@
             this.lbl_facturaPr.TabIndex = 98;
             this.lbl_facturaPr.Text = "Codigo Factura:";
             // 
+            // txt_descuento
+            // 
+            this.txt_descuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descuento.Location = new System.Drawing.Point(841, 129);
+            this.txt_descuento.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_descuento.Name = "txt_descuento";
+            this.txt_descuento.Size = new System.Drawing.Size(156, 24);
+            this.txt_descuento.TabIndex = 96;
+            this.txt_descuento.TextChanged += new System.EventHandler(this.txt_descuento_TextChanged);
+            this.txt_descuento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_descuento_KeyPress);
+            // 
+            // lbl_descuento
+            // 
+            this.lbl_descuento.AutoSize = true;
+            this.lbl_descuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_descuento.Location = new System.Drawing.Point(644, 135);
+            this.lbl_descuento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_descuento.Name = "lbl_descuento";
+            this.lbl_descuento.Size = new System.Drawing.Size(84, 18);
+            this.lbl_descuento.TabIndex = 97;
+            this.lbl_descuento.Text = "Descuento:";
+            // 
             // Frm_FacturaProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1109, 882);
+            this.ClientSize = new System.Drawing.Size(1109, 922);
             this.Controls.Add(this.txt_CodFacturaP);
             this.Controls.Add(this.lbl_facturaPr);
             this.Controls.Add(this.gp_detalle);
@@ -763,5 +791,7 @@
         private System.Windows.Forms.Label lbl_codFactura;
         private System.Windows.Forms.TextBox txt_CodFacturaP;
         private System.Windows.Forms.Label lbl_facturaPr;
+        private System.Windows.Forms.TextBox txt_descuento;
+        private System.Windows.Forms.Label lbl_descuento;
     }
 }
