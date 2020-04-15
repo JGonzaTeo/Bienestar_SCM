@@ -376,3 +376,53 @@ C:\Users\ivan5\Desktop\SCM GIT\Bienestar_SCM\Modulo SCM\prueba\prueba\obj\Debug\
 C:\Users\ivan5\Desktop\SCM GIT\Bienestar_SCM\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CopyComplete
 C:\Users\ivan5\Desktop\SCM GIT\Bienestar_SCM\Modulo SCM\prueba\prueba\obj\Debug\prueba.exe
 C:\Users\ivan5\Desktop\SCM GIT\Bienestar_SCM\Modulo SCM\prueba\prueba\obj\Debug\prueba.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe.config
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\prueba.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csprojAssemblyReference.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\prueba.Form1.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\prueba.Properties.Resources.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.GenerateResource.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CopyComplete
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\prueba.exe
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\obj\Debug\prueba.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe.config
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\prueba.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csprojAssemblyReference.cache
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\prueba.Form1.resources
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\prueba.Properties.Resources.resources
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.GenerateResource.cache
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CopyComplete
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\prueba.exe
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\prueba\prueba\obj\Debug\prueba.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe.config
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\prueba.exe
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\prueba.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csprojAssemblyReference.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\prueba.Form1.resources
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\prueba.Properties.Resources.resources
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.GenerateResource.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\Form_RRHH.csproj.CopyComplete
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\prueba.exe
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\prueba\prueba\obj\Debug\prueba.pdb

@@ -24,12 +24,12 @@ namespace Capa_Diseño_SCM.Consultas
 
         public void MostrarConsulta()
         {
-            OdbcDataReader mostrar = logic.consultaproducto("1");
+            OdbcDataReader mostrar = logic.consultaproducto();
             try
             {
                 while (mostrar.Read())
                 {
-                    Dgv_consultaProd.Rows.Add(mostrar.GetString(0), mostrar.GetString(1), mostrar.GetString(2), mostrar.GetString(3), mostrar.GetString(4), mostrar.GetString(5), mostrar.GetString(6), mostrar.GetString(7), mostrar.GetString(8));
+                    Dgv_consultaProd.Rows.Add(mostrar.GetString(0), mostrar.GetString(1), mostrar.GetString(2), mostrar.GetString(3), mostrar.GetString(4), mostrar.GetString(5), mostrar.GetString(6), mostrar.GetString(7), mostrar.GetString(8), mostrar.GetString(9), mostrar.GetString(10));
                 }
             }
             catch (Exception err)

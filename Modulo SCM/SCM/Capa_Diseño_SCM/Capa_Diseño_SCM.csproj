@@ -43,11 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\Frm_consultaAcreedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaAcreedor.Designer.cs">
+      <DependentUpon>Frm_consultaAcreedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaBodega.Designer.cs">
+      <DependentUpon>Frm_consultaBodega.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\Frm_consultaConceptos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\Frm_consultaConceptos.designer.cs">
       <DependentUpon>Frm_consultaConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaDisponibilidadDeBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaDisponibilidadDeBodega.Designer.cs">
+      <DependentUpon>Frm_consultaDisponibilidadDeBodega.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\Frm_consultaImpuesto.cs">
       <SubType>Form</SubType>
@@ -60,6 +78,48 @@
     </Compile>
     <Compile Include="Consultas\Frm_consultaProducto.Designer.cs">
       <DependentUpon>Frm_consultaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaProveedor.Designer.cs">
+      <DependentUpon>Frm_consultaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaRuta.Designer.cs">
+      <DependentUpon>Frm_consultaRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoProducto.Designer.cs">
+      <DependentUpon>Frm_consultaTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTipoTransporte.Designer.cs">
+      <DependentUpon>Frm_consultaTipoTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultaTransporte.Designer.cs">
+      <DependentUpon>Frm_consultaTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantAcreedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantAcreedor.Designer.cs">
+      <DependentUpon>Frm_MantAcreedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantBodega.Designer.cs">
+      <DependentUpon>Frm_MantBodega.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\Frm_MantImpuestos.cs">
       <SubType>Form</SubType>
@@ -79,6 +139,30 @@
     <Compile Include="Mantenimientos\Frm_MantProducto.Designer.cs">
       <DependentUpon>Frm_MantProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\Frm_MantRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantRuta.Designer.cs">
+      <DependentUpon>Frm_MantRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTipoTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTipoTransporte.Designer.cs">
+      <DependentUpon>Frm_MantTipoTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantTransporte.Designer.cs">
+      <DependentUpon>Frm_MantTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_MantProveedores.Designer.cs">
+      <DependentUpon>Frm_MantProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDISCM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +175,29 @@
     <Compile Include="Procesos\Frm_BusquedaOrdenCompra.Designer.cs">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Frm_ExistenciasProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_ExistenciasProducto.Designer.cs">
+      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.Designer.cs">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Frm_ListaMovInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_ListaMovInv.Designer.cs">
+      <DependentUpon>Frm_ListaMovInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Frm_MovInvDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_MovInvDetalle.Designer.cs">
+      <DependentUpon>Frm_MovInvDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\Frm_Polizas.cs">
       <SubType>Form</SubType>
@@ -106,20 +208,54 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos_SCM\Capa_Datos_SCM.csproj">
+      <Project>{6E436EB0-23B8-4986-B7E2-C35B412D6910}</Project>
+      <Name>Capa_Datos_SCM</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Capa_Logica_SCM\Capa_Logica_SCM.csproj">
       <Project>{eb99e3b8-5e4d-40f4-9d8e-46d690fe4cf7}</Project>
       <Name>Capa_Logica_SCM</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Consultas\Frm_consultaAcreedor.resx">
+      <DependentUpon>Frm_consultaAcreedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaBodega.resx">
+      <DependentUpon>Frm_consultaBodega.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\Frm_consultaConceptos.resx">
       <DependentUpon>Frm_consultaConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaDisponibilidadDeBodega.resx">
+      <DependentUpon>Frm_consultaDisponibilidadDeBodega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\Frm_consultaImpuesto.resx">
       <DependentUpon>Frm_consultaImpuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\Frm_consultaProducto.resx">
       <DependentUpon>Frm_consultaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaProveedor.resx">
+      <DependentUpon>Frm_consultaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaRuta.resx">
+      <DependentUpon>Frm_consultaRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaTipoProducto.resx">
+      <DependentUpon>Frm_consultaTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaTipoTransporte.resx">
+      <DependentUpon>Frm_consultaTipoTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Frm_consultaTransporte.resx">
+      <DependentUpon>Frm_consultaTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantAcreedor.resx">
+      <DependentUpon>Frm_MantAcreedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantBodega.resx">
+      <DependentUpon>Frm_MantBodega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\Frm_MantImpuestos.resx">
       <DependentUpon>Frm_MantImpuestos.cs</DependentUpon>
@@ -130,14 +266,35 @@
     <EmbeddedResource Include="Mantenimientos\Frm_MantProducto.resx">
       <DependentUpon>Frm_MantProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantRuta.resx">
+      <DependentUpon>Frm_MantRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantTipoTransporte.resx">
+      <DependentUpon>Frm_MantTipoTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantTransporte.resx">
+      <DependentUpon>Frm_MantTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_MantProveedores.resx">
+      <DependentUpon>Frm_MantProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDISCM.resx">
       <DependentUpon>MDISCM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_BusquedaOrdenCompra.resx">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_ExistenciasProducto.resx">
+      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_FacturaProveedores.resx">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_ListaMovInv.resx">
+      <DependentUpon>Frm_ListaMovInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_MovInvDetalle.resx">
+      <DependentUpon>Frm_MovInvDetalle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

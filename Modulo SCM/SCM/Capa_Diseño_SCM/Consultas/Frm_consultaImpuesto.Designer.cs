@@ -51,7 +51,7 @@
             this.Btn_actualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.Btn_actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_actualizar.Location = new System.Drawing.Point(692, 201);
+            this.Btn_actualizar.Location = new System.Drawing.Point(695, 156);
             this.Btn_actualizar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_actualizar.Name = "Btn_actualizar";
             this.Btn_actualizar.Size = new System.Drawing.Size(123, 33);
@@ -68,7 +68,7 @@
             this.Btn_seleccionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SeaGreen;
             this.Btn_seleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_seleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_seleccionar.Location = new System.Drawing.Point(819, 201);
+            this.Btn_seleccionar.Location = new System.Drawing.Point(695, 206);
             this.Btn_seleccionar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_seleccionar.Name = "Btn_seleccionar";
             this.Btn_seleccionar.Size = new System.Drawing.Size(123, 33);
@@ -124,10 +124,10 @@
             this.Pnl_nombreForm.Controls.Add(this.btn_minimizar);
             this.Pnl_nombreForm.Controls.Add(this.lbl_titulo);
             this.Pnl_nombreForm.Controls.Add(this.btn_cerrar);
-            this.Pnl_nombreForm.Location = new System.Drawing.Point(2, 1);
+            this.Pnl_nombreForm.Location = new System.Drawing.Point(0, 0);
             this.Pnl_nombreForm.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_nombreForm.Name = "Pnl_nombreForm";
-            this.Pnl_nombreForm.Size = new System.Drawing.Size(970, 51);
+            this.Pnl_nombreForm.Size = new System.Drawing.Size(849, 51);
             this.Pnl_nombreForm.TabIndex = 73;
             // 
             // btn_minimizar
@@ -135,7 +135,7 @@
             this.btn_minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_minimizar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimizar.Image")));
-            this.btn_minimizar.Location = new System.Drawing.Point(852, 12);
+            this.btn_minimizar.Location = new System.Drawing.Point(703, 8);
             this.btn_minimizar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_minimizar.Name = "btn_minimizar";
             this.btn_minimizar.Size = new System.Drawing.Size(33, 31);
@@ -160,7 +160,7 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(925, 12);
+            this.btn_cerrar.Location = new System.Drawing.Point(776, 8);
             this.btn_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(33, 31);
@@ -172,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 345);
+            this.ClientSize = new System.Drawing.Size(847, 334);
             this.Controls.Add(this.Btn_actualizar);
             this.Controls.Add(this.Btn_seleccionar);
             this.Controls.Add(this.Dgv_consulta);

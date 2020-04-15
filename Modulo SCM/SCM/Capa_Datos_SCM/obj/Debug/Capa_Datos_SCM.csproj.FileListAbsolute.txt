@@ -15,3 +15,19 @@ C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.pd
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csprojAssemblyReference.cache
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csprojAssemblyReference.cache
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csprojAssemblyReference.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb

@@ -66,7 +66,7 @@
             this.Pnl_nombreForm.Controls.Add(this.btn_minimizar);
             this.Pnl_nombreForm.Controls.Add(this.lblTitulo);
             this.Pnl_nombreForm.Controls.Add(this.btn_cerrar);
-            this.Pnl_nombreForm.Location = new System.Drawing.Point(0, 1);
+            this.Pnl_nombreForm.Location = new System.Drawing.Point(0, 0);
             this.Pnl_nombreForm.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_nombreForm.Name = "Pnl_nombreForm";
             this.Pnl_nombreForm.Size = new System.Drawing.Size(970, 51);
@@ -140,7 +140,7 @@
             this.fecha,
             this.codP,
             this.total});
-            this.Dgv_consultaOrdenCompra.Location = new System.Drawing.Point(11, 173);
+            this.Dgv_consultaOrdenCompra.Location = new System.Drawing.Point(11, 120);
             this.Dgv_consultaOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
             this.Dgv_consultaOrdenCompra.MultiSelect = false;
             this.Dgv_consultaOrdenCompra.Name = "Dgv_consultaOrdenCompra";
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 450);
+            this.ClientSize = new System.Drawing.Size(970, 382);
             this.Controls.Add(this.Lbl_codPercepcion);
             this.Controls.Add(this.Txt_Cod);
             this.Controls.Add(this.Btn_seleccionar);

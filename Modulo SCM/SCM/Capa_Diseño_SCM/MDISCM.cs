@@ -1,4 +1,5 @@
-﻿using Capa_Diseño_SCM.Mantenimientos;
+﻿using Capa_Diseño_SCM.Consultas;
+using Capa_Diseño_SCM.Mantenimientos;
 using CapaDiseño.Mantenimientos;
 using System;
 using System.Collections.Generic;
@@ -133,12 +134,12 @@ namespace Capa_Diseño_SCM
             this.Dispose();
         }
 
-        bool ventanaFactura = false;
+        bool ventanafactura = false;
         Frm_BusquedaOrdenCompra facturaP = new Frm_BusquedaOrdenCompra("");
         private void ingresoFacturaProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_BusquedaOrdenCompra);
-            if (ventanaFactura == false || frmC == null)
+            if (ventanafactura == false || frmC == null)
             {
                 if (frmC == null)
                 {
@@ -148,7 +149,7 @@ namespace Capa_Diseño_SCM
                 facturaP.MdiParent = this;
                 facturaP.Show();
                 Application.DoEvents();
-                ventanaFactura = true;
+                ventanafactura = true;
             }
             else
             {
@@ -176,6 +177,256 @@ namespace Capa_Diseño_SCM
             else
             {
                 impuestos.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+        bool ventanaExistencia = false;
+        Frm_ExistenciasProducto existenciaP = new Frm_ExistenciasProducto();
+        private void existenciasProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ExistenciasProducto);
+            if (ventanaExistencia == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
+                }
+
+                existenciaP.MdiParent = this;
+                existenciaP.Show();
+                Application.DoEvents();
+                ventanaExistencia = true;
+            }
+            else
+            {
+                existenciaP.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+        bool movimientoInventario = false;
+        Frm_ListaMovInv movInv = new Frm_ListaMovInv();
+        private void movimientosDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ListaMovInv);
+            if (movimientoInventario == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
+                }
+
+                movInv.MdiParent = this;
+                movInv.Show();
+                Application.DoEvents();
+                movimientoInventario = true;
+            }
+            else
+            {
+                movInv.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool mantAcreedor = false;
+        Frm_MantAcreedor mantacreedor = new Frm_MantAcreedor("");
+        private void acreedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantAcreedor);
+            if (mantAcreedor == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    mantacreedor = new Frm_MantAcreedor(susuario);
+                }
+
+                mantacreedor.MdiParent = this;
+                mantacreedor.Show();
+                Application.DoEvents();
+                mantAcreedor = true;
+            }
+            else
+            {
+                mantacreedor.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool mantTransporte = false;
+        Frm_MantTransporte manttransporte = new Frm_MantTransporte("");
+        private void transporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantTransporte);
+            if (mantTransporte == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    manttransporte = new Frm_MantTransporte(susuario);
+                }
+
+                manttransporte.MdiParent = this;
+                manttransporte.Show();
+                Application.DoEvents();
+                mantTransporte = true;
+            }
+            else
+            {
+                manttransporte.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool mantTipoTransporte = false;
+        Frm_MantTipoTransporte manttipotransporte = new Frm_MantTipoTransporte("");
+        private void tipoDeTransporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantTipoTransporte);
+            if (mantTipoTransporte == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    manttipotransporte = new Frm_MantTipoTransporte(susuario);
+                }
+
+                manttipotransporte.MdiParent = this;
+                manttipotransporte.Show();
+                Application.DoEvents();
+                mantTipoTransporte = true;
+            }
+            else
+            {
+                manttipotransporte.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool mantRuta = false;
+        Frm_MantRuta mantruta = new Frm_MantRuta("");
+        private void rutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantRuta);
+            if (mantRuta == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    mantruta = new Frm_MantRuta(susuario);
+                }
+
+                mantruta.MdiParent = this;
+                mantruta.Show();
+                Application.DoEvents();
+                mantRuta = true;
+            }
+            else
+            {
+                mantruta.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool DisponibilidadBodega = false;
+        Frm_consultaDisponibilidadDeBodega disponibilidadbodega = new Frm_consultaDisponibilidadDeBodega();
+        private void disponibilidadEnBodegaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_consultaDisponibilidadDeBodega);
+            if (DisponibilidadBodega == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    disponibilidadbodega = new Frm_consultaDisponibilidadDeBodega();
+                }
+
+                disponibilidadbodega.MdiParent = this;
+                disponibilidadbodega.Show();
+                Application.DoEvents();
+                DisponibilidadBodega = true;
+            }
+            else
+            {
+                disponibilidadbodega.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+        bool DisponibilidadBodega1 = false;
+        Frm_consultaDisponibilidadDeBodega disponibilidadbodega1 = new Frm_consultaDisponibilidadDeBodega();
+        private void disponibilidadEnBodegaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+                Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_consultaDisponibilidadDeBodega);
+                if (DisponibilidadBodega1 == false || frmC == null)
+                {
+                    if (frmC == null)
+                    {
+                        disponibilidadbodega1 = new Frm_consultaDisponibilidadDeBodega();
+                    }
+
+                    disponibilidadbodega1.MdiParent = this;
+                    disponibilidadbodega1.Show();
+                    Application.DoEvents();
+                    DisponibilidadBodega1 = true;
+                }
+                else
+                {
+                    disponibilidadbodega1.WindowState = System.Windows.Forms.FormWindowState.Normal;
+                }
+            
+        }
+
+        bool ventanaBodega = false;
+        Frm_MantBodega Bodega = new Frm_MantBodega();
+        private void BodegaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantBodega);
+            if (ventanaBodega == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    Bodega = new Frm_MantBodega();
+                }
+
+                Bodega.MdiParent = this;
+                Bodega.Show();
+                Application.DoEvents();
+                ventanaBodega = true;
+            }
+            else
+            {
+                Bodega.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+        bool ventanaProducto = false;
+        Frm_MantProducto Producto = new Frm_MantProducto();
+
+        private void ProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantProducto);
+            if (ventanaProducto == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    Producto = new Frm_MantProducto();
+                }
+
+                Producto.MdiParent = this;
+                Producto.Show();
+                Application.DoEvents();
+                ventanaProducto = true;
+            }
+            else
+            {
+                Producto.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+        bool ventanaProveedor = false;
+        Frm_MantProveedores Proveedor = new Frm_MantProveedores();
+
+        private void ProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_MantProveedores);
+            if (ventanaProveedor == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    Proveedor = new Frm_MantProveedores();
+                }
+
+                Proveedor.MdiParent = this;
+                Proveedor.Show();
+                Application.DoEvents();
+                ventanaProveedor = true;
+            }
+            else
+            {
+                Bodega.WindowState = System.Windows.Forms.FormWindowState.Normal;
             }
         }
     }

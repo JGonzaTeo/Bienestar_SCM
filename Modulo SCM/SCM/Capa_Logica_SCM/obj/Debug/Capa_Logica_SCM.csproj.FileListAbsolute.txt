@@ -24,3 +24,29 @@ C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CopyComplete
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.dll
 C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csprojAssemblyReference.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CopyComplete
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csprojAssemblyReference.cache
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CopyComplete
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.dll
+C:\Users\Paula V\Desktop\Proyecto SCM\Proyectos\Bienestar_SCM-Angel-Conny\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csprojAssemblyReference.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.csproj.CopyComplete
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.dll
+C:\Users\ISIS\Downloads\Bienestar_SCM-Pruebasprogramacion2\Modulo SCM\SCM\Capa_Logica_SCM\obj\Debug\Capa_Logica_SCM.pdb
