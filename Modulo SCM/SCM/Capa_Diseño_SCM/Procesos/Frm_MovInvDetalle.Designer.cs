@@ -49,8 +49,11 @@
             this.Lbl_tipoMov = new System.Windows.Forms.Label();
             this.Lbl_codigoMov = new System.Windows.Forms.Label();
             this.Gpb_proMovInt = new System.Windows.Forms.GroupBox();
+            this.Txt_costoPro = new System.Windows.Forms.TextBox();
+            this.Lbl_costoPro = new System.Windows.Forms.Label();
             this.Btn_agregar = new System.Windows.Forms.Button();
             this.Txt_cantidadPro = new System.Windows.Forms.TextBox();
+            this.Btn_eliminar = new System.Windows.Forms.Button();
             this.Txt_conceptoPro = new System.Windows.Forms.TextBox();
             this.Txt_precioPro = new System.Windows.Forms.TextBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
@@ -60,14 +63,16 @@
             this.Lbl_precioPro = new System.Windows.Forms.Label();
             this.Lbl_producto = new System.Windows.Forms.Label();
             this.Lbl_precioTotal = new System.Windows.Forms.Label();
-            this.Btn_eliminar = new System.Windows.Forms.Button();
             this.Dgv_MovIntDetalles = new System.Windows.Forms.DataGridView();
-            this.Txt_precioTotal = new System.Windows.Forms.TextBox();
             this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Txt_precioTotal = new System.Windows.Forms.TextBox();
+            this.Txt_costoTotal = new System.Windows.Forms.TextBox();
+            this.Lbl_costoTotal = new System.Windows.Forms.Label();
             this.Pnl_nombreForm.SuspendLayout();
             this.Gpb_MovInt.SuspendLayout();
             this.Gpb_proMovInt.SuspendLayout();
@@ -199,6 +204,7 @@
             // 
             // Txt_codigoMov
             // 
+            this.Txt_codigoMov.Enabled = false;
             this.Txt_codigoMov.Location = new System.Drawing.Point(90, 36);
             this.Txt_codigoMov.Name = "Txt_codigoMov";
             this.Txt_codigoMov.Size = new System.Drawing.Size(131, 20);
@@ -212,6 +218,7 @@
             this.Btn_guardar.TabIndex = 6;
             this.Btn_guardar.Text = "Guardar";
             this.Btn_guardar.UseVisualStyleBackColor = true;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // Lbl_descripcionMov
             // 
@@ -269,8 +276,11 @@
             // 
             // Gpb_proMovInt
             // 
+            this.Gpb_proMovInt.Controls.Add(this.Txt_costoPro);
+            this.Gpb_proMovInt.Controls.Add(this.Lbl_costoPro);
             this.Gpb_proMovInt.Controls.Add(this.Btn_agregar);
             this.Gpb_proMovInt.Controls.Add(this.Txt_cantidadPro);
+            this.Gpb_proMovInt.Controls.Add(this.Btn_eliminar);
             this.Gpb_proMovInt.Controls.Add(this.Txt_conceptoPro);
             this.Gpb_proMovInt.Controls.Add(this.Txt_precioPro);
             this.Gpb_proMovInt.Controls.Add(this.Btn_buscar);
@@ -286,35 +296,65 @@
             this.Gpb_proMovInt.TabStop = false;
             this.Gpb_proMovInt.Text = "Productos";
             // 
+            // Txt_costoPro
+            // 
+            this.Txt_costoPro.Location = new System.Drawing.Point(77, 127);
+            this.Txt_costoPro.Name = "Txt_costoPro";
+            this.Txt_costoPro.Size = new System.Drawing.Size(187, 20);
+            this.Txt_costoPro.TabIndex = 13;
+            this.Txt_costoPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_costoPro_KeyPress);
+            // 
+            // Lbl_costoPro
+            // 
+            this.Lbl_costoPro.AutoSize = true;
+            this.Lbl_costoPro.Location = new System.Drawing.Point(16, 130);
+            this.Lbl_costoPro.Name = "Lbl_costoPro";
+            this.Lbl_costoPro.Size = new System.Drawing.Size(34, 13);
+            this.Lbl_costoPro.TabIndex = 12;
+            this.Lbl_costoPro.Text = "Costo";
+            // 
             // Btn_agregar
             // 
-            this.Btn_agregar.Location = new System.Drawing.Point(400, 123);
+            this.Btn_agregar.Location = new System.Drawing.Point(571, 87);
             this.Btn_agregar.Name = "Btn_agregar";
             this.Btn_agregar.Size = new System.Drawing.Size(75, 23);
             this.Btn_agregar.TabIndex = 4;
             this.Btn_agregar.Text = "Agregar";
             this.Btn_agregar.UseVisualStyleBackColor = true;
+            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
             // 
             // Txt_cantidadPro
             // 
-            this.Txt_cantidadPro.Location = new System.Drawing.Point(77, 128);
+            this.Txt_cantidadPro.Location = new System.Drawing.Point(357, 130);
             this.Txt_cantidadPro.Name = "Txt_cantidadPro";
             this.Txt_cantidadPro.Size = new System.Drawing.Size(187, 20);
             this.Txt_cantidadPro.TabIndex = 11;
+            this.Txt_cantidadPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_cantidadPro_KeyPress);
+            // 
+            // Btn_eliminar
+            // 
+            this.Btn_eliminar.Location = new System.Drawing.Point(571, 128);
+            this.Btn_eliminar.Name = "Btn_eliminar";
+            this.Btn_eliminar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_eliminar.TabIndex = 6;
+            this.Btn_eliminar.Text = "Eliminar";
+            this.Btn_eliminar.UseVisualStyleBackColor = true;
+            this.Btn_eliminar.Click += new System.EventHandler(this.Btn_eliminar_Click);
             // 
             // Txt_conceptoPro
             // 
-            this.Txt_conceptoPro.Location = new System.Drawing.Point(382, 82);
+            this.Txt_conceptoPro.Location = new System.Drawing.Point(77, 87);
             this.Txt_conceptoPro.Name = "Txt_conceptoPro";
             this.Txt_conceptoPro.Size = new System.Drawing.Size(187, 20);
             this.Txt_conceptoPro.TabIndex = 10;
             // 
             // Txt_precioPro
             // 
-            this.Txt_precioPro.Location = new System.Drawing.Point(77, 82);
+            this.Txt_precioPro.Location = new System.Drawing.Point(357, 87);
             this.Txt_precioPro.Name = "Txt_precioPro";
             this.Txt_precioPro.Size = new System.Drawing.Size(187, 20);
             this.Txt_precioPro.TabIndex = 9;
+            this.Txt_precioPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_precioPro_KeyPress);
             // 
             // Btn_buscar
             // 
@@ -324,6 +364,7 @@
             this.Btn_buscar.TabIndex = 7;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Txt_productoMovInt
             // 
@@ -336,7 +377,7 @@
             // Lbl_conceptoPro
             // 
             this.Lbl_conceptoPro.AutoSize = true;
-            this.Lbl_conceptoPro.Location = new System.Drawing.Point(323, 85);
+            this.Lbl_conceptoPro.Location = new System.Drawing.Point(16, 90);
             this.Lbl_conceptoPro.Name = "Lbl_conceptoPro";
             this.Lbl_conceptoPro.Size = new System.Drawing.Size(53, 13);
             this.Lbl_conceptoPro.TabIndex = 3;
@@ -345,7 +386,7 @@
             // Lbl_cantidadPro
             // 
             this.Lbl_cantidadPro.AutoSize = true;
-            this.Lbl_cantidadPro.Location = new System.Drawing.Point(18, 128);
+            this.Lbl_cantidadPro.Location = new System.Drawing.Point(298, 130);
             this.Lbl_cantidadPro.Name = "Lbl_cantidadPro";
             this.Lbl_cantidadPro.Size = new System.Drawing.Size(49, 13);
             this.Lbl_cantidadPro.TabIndex = 2;
@@ -354,7 +395,7 @@
             // Lbl_precioPro
             // 
             this.Lbl_precioPro.AutoSize = true;
-            this.Lbl_precioPro.Location = new System.Drawing.Point(18, 85);
+            this.Lbl_precioPro.Location = new System.Drawing.Point(298, 90);
             this.Lbl_precioPro.Name = "Lbl_precioPro";
             this.Lbl_precioPro.Size = new System.Drawing.Size(37, 13);
             this.Lbl_precioPro.TabIndex = 1;
@@ -372,20 +413,11 @@
             // Lbl_precioTotal
             // 
             this.Lbl_precioTotal.AutoSize = true;
-            this.Lbl_precioTotal.Location = new System.Drawing.Point(341, 555);
+            this.Lbl_precioTotal.Location = new System.Drawing.Point(138, 554);
             this.Lbl_precioTotal.Name = "Lbl_precioTotal";
             this.Lbl_precioTotal.Size = new System.Drawing.Size(64, 13);
             this.Lbl_precioTotal.TabIndex = 4;
             this.Lbl_precioTotal.Text = "Precio Total";
-            // 
-            // Btn_eliminar
-            // 
-            this.Btn_eliminar.Location = new System.Drawing.Point(570, 462);
-            this.Btn_eliminar.Name = "Btn_eliminar";
-            this.Btn_eliminar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_eliminar.TabIndex = 6;
-            this.Btn_eliminar.Text = "Eliminar";
-            this.Btn_eliminar.UseVisualStyleBackColor = true;
             // 
             // Dgv_MovIntDetalles
             // 
@@ -395,20 +427,13 @@
             this.NombreProducto,
             this.Concepto,
             this.Cantidad,
-            this.Precio});
-            this.Dgv_MovIntDetalles.Location = new System.Drawing.Point(24, 426);
+            this.Precio,
+            this.Costo});
+            this.Dgv_MovIntDetalles.Location = new System.Drawing.Point(33, 426);
             this.Dgv_MovIntDetalles.Name = "Dgv_MovIntDetalles";
             this.Dgv_MovIntDetalles.RowHeadersVisible = false;
-            this.Dgv_MovIntDetalles.Size = new System.Drawing.Size(503, 104);
+            this.Dgv_MovIntDetalles.Size = new System.Drawing.Size(605, 104);
             this.Dgv_MovIntDetalles.TabIndex = 7;
-            // 
-            // Txt_precioTotal
-            // 
-            this.Txt_precioTotal.Enabled = false;
-            this.Txt_precioTotal.Location = new System.Drawing.Point(427, 548);
-            this.Txt_precioTotal.Name = "Txt_precioTotal";
-            this.Txt_precioTotal.Size = new System.Drawing.Size(100, 20);
-            this.Txt_precioTotal.TabIndex = 8;
             // 
             // CodigoProducto
             // 
@@ -435,14 +460,45 @@
             this.Precio.HeaderText = "Precio";
             this.Precio.Name = "Precio";
             // 
+            // Costo
+            // 
+            this.Costo.HeaderText = "Costo";
+            this.Costo.Name = "Costo";
+            // 
+            // Txt_precioTotal
+            // 
+            this.Txt_precioTotal.Enabled = false;
+            this.Txt_precioTotal.Location = new System.Drawing.Point(224, 547);
+            this.Txt_precioTotal.Name = "Txt_precioTotal";
+            this.Txt_precioTotal.Size = new System.Drawing.Size(100, 20);
+            this.Txt_precioTotal.TabIndex = 8;
+            // 
+            // Txt_costoTotal
+            // 
+            this.Txt_costoTotal.Enabled = false;
+            this.Txt_costoTotal.Location = new System.Drawing.Point(457, 543);
+            this.Txt_costoTotal.Name = "Txt_costoTotal";
+            this.Txt_costoTotal.Size = new System.Drawing.Size(100, 20);
+            this.Txt_costoTotal.TabIndex = 10;
+            // 
+            // Lbl_costoTotal
+            // 
+            this.Lbl_costoTotal.AutoSize = true;
+            this.Lbl_costoTotal.Location = new System.Drawing.Point(371, 550);
+            this.Lbl_costoTotal.Name = "Lbl_costoTotal";
+            this.Lbl_costoTotal.Size = new System.Drawing.Size(61, 13);
+            this.Lbl_costoTotal.TabIndex = 9;
+            this.Lbl_costoTotal.Text = "Costo Total";
+            // 
             // Frm_MovInvDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 588);
+            this.Controls.Add(this.Txt_costoTotal);
+            this.Controls.Add(this.Lbl_costoTotal);
             this.Controls.Add(this.Txt_precioTotal);
             this.Controls.Add(this.Dgv_MovIntDetalles);
-            this.Controls.Add(this.Btn_eliminar);
             this.Controls.Add(this.Gpb_proMovInt);
             this.Controls.Add(this.Lbl_precioTotal);
             this.Controls.Add(this.Gpb_MovInt);
@@ -504,6 +560,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
+        private System.Windows.Forms.TextBox Txt_costoTotal;
+        private System.Windows.Forms.Label Lbl_costoTotal;
+        private System.Windows.Forms.Label Lbl_costoPro;
+        private System.Windows.Forms.TextBox Txt_costoPro;
     }
 }
 

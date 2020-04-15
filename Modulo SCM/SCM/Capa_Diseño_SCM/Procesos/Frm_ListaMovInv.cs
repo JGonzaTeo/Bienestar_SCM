@@ -53,14 +53,30 @@ namespace Capa_Diseño_SCM
 
         private void Btn_ingresar_Click(object sender, EventArgs e)
         {
+            // MOVIMIENTO DE INVENTARIOS VACIO
             Frm_MovInvDetalle MIVacio = new Frm_MovInvDetalle();
             MIVacio.Show();
         }
 
         private void Btn_consultar_Click(object sender, EventArgs e)
         {
-            Frm_MovInvDetalle MILleno = new Frm_MovInvDetalle();
-            MILleno.Show();
+            // MOVIMIENTO DE INVENTARIOS LLENO CON TODOS LOS CAMPOS BLOQUEADOS
+            Frm_MovInvDetalle MILlenoBloqueado = new Frm_MovInvDetalle();
+            MILlenoBloqueado.Show();
+        }
+
+        private void Btn_editar_Click(object sender, EventArgs e)
+        {
+            // MOVIMIENTO DE INVENTARIOS LLENO CON LOS CAMPOS DESBLOQUEADOS
+            Frm_MovInvDetalle MILlenoDesbloqueado = new Frm_MovInvDetalle();
+            MILlenoDesbloqueado.Show();
+        }
+
+        private void Dgv_listaMovInt_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int fila = Dgv_listaMovInt.CurrentCell.RowIndex;
+            Dgv_listaMovInt.Rows[fila].Selected = true;
+
         }
     }
 }
