@@ -1,0 +1,116 @@
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CoreCompileInputs.cache
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\prueb\source\repos\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Mantenimientos.Frm_MantPercepciones.resources
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CoreCompileInputs.cache
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\prueb\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Consulta.Frm_consultaConceptos.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Consulta.Frm_consultaConceptos.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaImpuesto.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantImpuestos.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Mantenimientos.Frm_MantPercepciones.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_BusquedaOrdenCompra.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_FacturaProveedores.resources
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\ivan5\Desktop\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Consulta.Frm_consultaConceptos.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaImpuesto.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaProducto.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantImpuestos.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Mantenimientos.Frm_MantPercepciones.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantProducto.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_BusquedaOrdenCompra.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ExistenciasProducto.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_FacturaProveedores.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ListaMovInv.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_MovInvDetalle.resources
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Consulta.Frm_consultaConceptos.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaImpuesto.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaProducto.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantImpuestos.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Mantenimientos.Frm_MantPercepciones.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantProducto.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_BusquedaOrdenCompra.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ExistenciasProducto.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_FacturaProveedores.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ListaMovInv.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_MovInvDetalle.resources
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.dll
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Diseño_SCM.pdb
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.dll
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Logica_SCM.pdb
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csprojAssemblyReference.cache
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Consulta.Frm_consultaConceptos.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaImpuesto.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaProducto.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantImpuestos.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\CapaDiseño.Mantenimientos.Frm_MantPercepciones.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Mantenimientos.Frm_MantProducto.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.MDISCM.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_BusquedaOrdenCompra.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ExistenciasProducto.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_FacturaProveedores.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_ListaMovInv.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Frm_MovInvDetalle.resources
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.GenerateResource.cache
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.csproj.CopyComplete
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.dll
+C:\Users\Angel Solares\Desktop\Ingenieria de Software\Programa Cadena de Suministro\Prueba\Cony\Bienestar_SCM\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
