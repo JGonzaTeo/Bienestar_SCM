@@ -150,17 +150,8 @@ namespace Capa_Diseño_SCM.Mantenimientos
 
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Cbo_ruta.Text);
-            MessageBox.Show(Cbo_tipotransporte.Text);
             
-           /* OdbcDataReader cit2 = logic.consultartransporte2(Cbo_ruta.Text);
-            OdbcDataReader cit1 = logic.consultartransporte3(Cbo_tipotransporte.Text);
-            MessageBox.Show(cit2);
-            MessageBox.Show(cit1);
-            string ruta = cit2.GetString(0);
-            string transporte = cit1.GetString(0);
-            */
-           // OdbcDataReader cita = logic.insertartransporte(Txt_codigotransporte.Text, ruta, transporte, Txt_placa.Text, Txt_chasis.Text, Txt_motor.Text, Cbo_estado.Text);
+            OdbcDataReader cita = logic.insertartransporte(Txt_codigotransporte.Text, Cbo_ruta.Text, Cbo_tipotransporte.Text, Txt_placa.Text, Txt_chasis.Text, Txt_motor.Text, Cbo_estado.Text);
             MessageBox.Show("Datos registrados.");
             logic.bitacora("0", slocalIP, smacAddresses, suser, "SCM", DateTime.Now.ToString("G"), "Guardar", this.GetType().Name);
             limpiar();

@@ -255,21 +255,9 @@ namespace Capa_Datos_SCM
         {
             try
             {
-                /*
+                
                 cn.conexionbd();
-                string scodigoruta1 = "select pkidruta from ruta where nombre='"+scodigoruta+"'; ";
-                comm = new OdbcCommand(scodigoruta1, cn.conexionbd());
-                OdbcDataReader mostrar1 = comm.ExecuteReader();
-                Console.WriteLine(mostrar1.GetString(0));
-
-                string scodigotipotransporte2 = "select pkidtipotransporte from tipotransporte where nombre='" + scodigotipotransporte + "'; ";
-                comm = new OdbcCommand(scodigotipotransporte2, cn.conexionbd());
-                OdbcDataReader mostrar2 = comm.ExecuteReader();
-                Console.WriteLine(mostrar2.GetString(0));
-                */
-
-                cn.conexionbd();
-                string consulta = "insert into transporte values(" + scodigo + ", '" + scodigoruta + "' ,'" + scodigotipotransporte + "','" + splaca + "','" + schasis + "','" + smotor + "','" + sestado + "');";
+                string consulta = "insert into transporte values(" + scodigo + ", (select pkidruta from ruta where nombre='" + scodigoruta + "') ,(select pkidtipotransporte from tipotransporte where nombre='" + scodigotipotransporte + "'),'" + splaca + "','" + schasis + "','" + smotor + "','" + sestado + "');";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -280,41 +268,7 @@ namespace Capa_Datos_SCM
                 return null;
             }
         }
-        public OdbcDataReader consultartransporte2(string campo)
-        {
-
-            try
-            {
-                cn.conexionbd();
-                string consulta = "SELECT pkidruta FROM ruta WHERE nombre='" + campo + "';";
-                comm = new OdbcCommand(consulta, cn.conexionbd());
-                OdbcDataReader mostrar = comm.ExecuteReader();
-                return mostrar;
-            }
-            catch (Exception err)
-            {
-                Console.WriteLine(err.Message);
-                return null;
-            }
-        }
-        public OdbcDataReader consultartransporte3(string campo)
-        {
-
-            try
-            {
-                cn.conexionbd();
-                string consulta = "SELECT pkidtipotransporte FROM tipotransporte WHERE nombre='" + campo + "'; ";
-                comm = new OdbcCommand(consulta, cn.conexionbd());
-                OdbcDataReader mostrar = comm.ExecuteReader();
-                return mostrar;
-            }
-            catch (Exception err)
-            {
-                Console.WriteLine(err.Message);
-                return null;
-            }
-        }
-
+       
         //---------------------------------------------------------------------------------ELIMINAR-TRANSPORTE-------------------------------------------------------------------------------
         public OdbcDataReader eliminartransporte(string scodigo)
         {

@@ -101,14 +101,7 @@ namespace Capa_Logica_SCM
         {
             return sn.consultartransporte(numero);
         }
-        public OdbcDataReader consultartransporte2(string numero)
-        {
-            return sn.consultartransporte2(numero);
-        }
-        public OdbcDataReader consultartransporte3(string numero)
-        {
-            return sn.consultartransporte3(numero);
-        }
+        
         //---------------------------------------------------------------------------------MODIFICAR-TIPOTRANSPORTE-------------------------------------------------------------------------------
         public OdbcDataReader modificartipotransporte(string scodigo, string snombre, float fcapacidad, string sestado)
         {
