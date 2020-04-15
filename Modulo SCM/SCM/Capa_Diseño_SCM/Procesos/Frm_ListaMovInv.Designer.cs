@@ -150,6 +150,7 @@
             this.Btn_editar.Text = "Editar";
             this.Btn_editar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_editar.UseVisualStyleBackColor = false;
+            this.Btn_editar.Click += new System.EventHandler(this.Btn_editar_Click);
             // 
             // Btn_ingresar
             // 
@@ -185,6 +186,7 @@
             this.Dgv_listaMovInt.RowHeadersVisible = false;
             this.Dgv_listaMovInt.Size = new System.Drawing.Size(404, 150);
             this.Dgv_listaMovInt.TabIndex = 7;
+            this.Dgv_listaMovInt.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_listaMovInt_CellContentClick);
             // 
             // CodigoMov
             // 

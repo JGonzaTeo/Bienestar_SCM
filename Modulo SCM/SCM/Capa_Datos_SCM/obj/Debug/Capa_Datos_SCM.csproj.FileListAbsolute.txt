@@ -20,3 +20,9 @@ C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\
 C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csproj.CoreCompileInputs.cache
 C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
 C:\Users\Conny\Downloads\Bienestar_SCM-Paula-Isis\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\bin\Debug\Capa_Datos_SCM.pdb
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csprojAssemblyReference.cache
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.dll
+C:\Users\Conny\Desktop\Bienestar_SCM\Modulo SCM\SCM\Capa_Datos_SCM\obj\Debug\Capa_Datos_SCM.pdb

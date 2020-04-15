@@ -148,6 +148,7 @@
             this.Btn_buscar.TabIndex = 5;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Lbl_entMovInt
             // 
@@ -193,6 +194,7 @@
             this.Btn_agregar.TabIndex = 10;
             this.Btn_agregar.Text = "Agregar";
             this.Btn_agregar.UseVisualStyleBackColor = true;
+            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
             // 
             // Txt_entrada
             // 
@@ -200,6 +202,7 @@
             this.Txt_entrada.Name = "Txt_entrada";
             this.Txt_entrada.Size = new System.Drawing.Size(100, 20);
             this.Txt_entrada.TabIndex = 6;
+            this.Txt_entrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_entrada_KeyPress);
             // 
             // Txt_minimo
             // 
@@ -207,6 +210,7 @@
             this.Txt_minimo.Name = "Txt_minimo";
             this.Txt_minimo.Size = new System.Drawing.Size(100, 20);
             this.Txt_minimo.TabIndex = 8;
+            this.Txt_minimo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_minimo_KeyPress);
             // 
             // Txt_salida
             // 
@@ -214,6 +218,7 @@
             this.Txt_salida.Name = "Txt_salida";
             this.Txt_salida.Size = new System.Drawing.Size(100, 20);
             this.Txt_salida.TabIndex = 7;
+            this.Txt_salida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_salida_KeyPress);
             // 
             // Txt_maximo
             // 
@@ -221,6 +226,7 @@
             this.Txt_maximo.Name = "Txt_maximo";
             this.Txt_maximo.Size = new System.Drawing.Size(100, 20);
             this.Txt_maximo.TabIndex = 9;
+            this.Txt_maximo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_maximo_KeyPress);
             // 
             // Lbl_proMovInt
             // 
