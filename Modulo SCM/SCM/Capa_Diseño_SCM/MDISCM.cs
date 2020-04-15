@@ -15,7 +15,7 @@ namespace Capa_Diseño_SCM
     public partial class MDISCM : Form
     {
         private int childFormNumber = 0;
-        string susuario = "usuario";
+        string susuario = "1";
         public MDISCM()
         {
             InitializeComponent();
