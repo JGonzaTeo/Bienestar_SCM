@@ -345,6 +345,7 @@
             this.btn_Ayuda.Size = new System.Drawing.Size(33, 31);
             this.btn_Ayuda.TabIndex = 6;
             this.btn_Ayuda.UseVisualStyleBackColor = true;
+            this.btn_Ayuda.Click += new System.EventHandler(this.Btn_Ayuda_Click);
             // 
             // Lbl_MantProveedor
             // 
@@ -384,7 +385,7 @@
             this.btn_cerrar.UseVisualStyleBackColor = true;
             this.btn_cerrar.Click += new System.EventHandler(this.Btn_cerrar_Click);
             // 
-            // MantProveedores
+            // Frm_MantProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -397,7 +398,7 @@
             this.Controls.Add(this.Btn_ingresar);
             this.Controls.Add(this.Pnl_nombreForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MantProveedores";
+            this.Name = "Frm_MantProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantProveedores";
             this.gpb_datos.ResumeLayout(false);

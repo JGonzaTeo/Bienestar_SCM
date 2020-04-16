@@ -192,5 +192,27 @@ namespace Capa_Diseño_SCM.Mantenimientos
                     Cells[6].Value.ToString();
             }
         }
+
+        private void Btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            string ruta = "";
+            string indice = "61";
+
+            OdbcDataReader mostrarayuda = logic.consultaayuda("2");
+            try
+            {
+                while (mostrarayuda.Read())
+                {
+                    ruta = mostrarayuda.GetString(1);
+                    indice = mostrarayuda.GetString(2);
+                }
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+            }
+
+            Help.ShowHelp(this, ruta, indice);
+        }
     }
 }

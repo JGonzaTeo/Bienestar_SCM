@@ -206,7 +206,7 @@ namespace Capa_Diseño_SCM.Mantenimientos
         private void Btn_Ayuda_Click(object sender, EventArgs e)
         {
             string ruta = "";
-            string indice = "";
+            string indice = "59";
 
             OdbcDataReader mostrarayuda = logic.consultaayuda("2");
             try
