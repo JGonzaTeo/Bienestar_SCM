@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\Frm_consultafacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Frm_consultafacturas.Designer.cs">
+      <DependentUpon>Frm_consultafacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\Frm_consultaConceptos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     <Compile Include="Procesos\Frm_BusquedaOrdenCompra.Designer.cs">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Frm_DevolucionProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_DevolucionProveedores.Designer.cs">
+      <DependentUpon>Frm_DevolucionProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Consultas\Frm_consultafacturas.resx">
+      <DependentUpon>Frm_consultafacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\Frm_consultaConceptos.resx">
       <DependentUpon>Frm_consultaConceptos.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_BusquedaOrdenCompra.resx">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_DevolucionProveedores.resx">
+      <DependentUpon>Frm_DevolucionProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_FacturaProveedores.resx">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>

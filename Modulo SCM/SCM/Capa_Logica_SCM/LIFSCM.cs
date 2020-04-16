@@ -120,7 +120,41 @@ namespace Capa_Logica_SCM
         ;
 
         }
+        public OdbcDataReader facturas()
 
+        {
+            return sn.consultafac()
+        ;
+
+        }
+
+        public OdbcDataReader detalle(string sCodfactura)
+
+        {
+            return sn.consultadetallefactura(sCodfactura)
+        ;
+
+        }
+
+        public OdbcDataReader dev(string pkcodigodev, string pkidEncabezadoFacturaP, string pkcodigoempleado, string fkIdOrdenCompra, string numerofactura, string total,string motivo)
+
+
+        {
+            return sn.Insertardevolucion( pkcodigodev,  pkidEncabezadoFacturaP, pkcodigoempleado, fkIdOrdenCompra,  numerofactura,  total, motivo)
+
+        ;
+
+        }
+
+        public OdbcDataReader movi(string pkidProducto, string concepto, string documento, string cantidad, string fecha)
+
+
+        {
+            return sn.movimientogenerarl(pkidProducto, concepto,  documento,cantidad, fecha)
+
+        ;
+
+        }
 
 
     }

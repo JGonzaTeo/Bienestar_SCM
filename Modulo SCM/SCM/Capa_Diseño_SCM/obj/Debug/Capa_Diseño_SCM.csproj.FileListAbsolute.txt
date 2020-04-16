@@ -65,3 +65,5 @@ C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Di
 C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.pdb
 C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaEmpleados.resources
 C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consultaFormaPago.resources
+C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Consultas.Frm_consulta_facturas.resources
+C:\Users\dell\Desktop\ivanactual\Bienestar_SCM-Ivan-Fredy\Modulo SCM\SCM\Capa_Diseño_SCM\obj\Debug\Capa_Diseño_SCM.Procesos.Frm_DevolucionProveedores.resources

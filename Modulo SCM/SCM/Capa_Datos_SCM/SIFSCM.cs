@@ -278,5 +278,76 @@ namespace Capa_Datos_SCM
             }
         }
 
+        public OdbcDataReader consultafac()
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "SELECT * FROM facturaproveedorencabezado;";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+
+        }
+
+        public OdbcDataReader consultadetallefactura(string sCodfactura)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "SELECT * FROM mydb.facturaproveedordetalle WHERE fkidEncabezadoFactura = '"+sCodfactura+"' ;";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+        public OdbcDataReader Insertardevolucion(string pkcodigodev, string pkidEncabezadoFacturaP, string pkcodigoempleado, string fkIdOrdenCompra, string numerofactura, string total,string motivo)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into mydb.devoluciones values(" + pkcodigodev + ", '" + pkidEncabezadoFacturaP + "' ,'" + pkcodigoempleado + "','" + fkIdOrdenCompra + "','" + numerofactura + "','" + total + "','" + motivo + "');";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+        public OdbcDataReader movimientogenerarl( string pkidProducto, string concepto, string documento, string cantidad, string fecha)
+        {
+            try
+            {
+                cn.conexionbd();
+                string consulta = "insert into movimiento_general values(" + 0 + ", '" + pkidProducto + "' ,'" + concepto + "','" + documento + "','" + cantidad + "','" + fecha + "');";
+                comm = new OdbcCommand(consulta, cn.conexionbd());
+                OdbcDataReader mostrar = comm.ExecuteReader();
+                return mostrar;
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                return null;
+            }
+        }
+
+
     }
+
+
 }
