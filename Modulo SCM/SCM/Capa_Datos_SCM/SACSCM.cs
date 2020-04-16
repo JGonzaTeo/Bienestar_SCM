@@ -123,12 +123,12 @@ namespace Capa_Datos_SCM
 
 
         //---------------------------------------------------------------CONSULTA MOVIMIENTO GENERAL POR CONCEPTO------------------------------------------------------------------------------------------//
-        public OdbcDataReader consultaMovimientoGeneralConcepto(string concepto)
+        public OdbcDataReader consultaMovimientoGeneralConcepto(string concepto, string fecha)
         {
             try
             {
                 cn.conexionbd();
-                string consulta = "SELECT m.pkidmovimiento_general,m.pkidProducto, p.Nombre, m.concepto,m.documento,m.cantidad, p.Precio, p.Costo FROM movimiento_general m inner join producto p on m.pkidProducto=p.pkidProducto where m.concepto='" + concepto + "';";
+                string consulta = "SELECT m.pkidmovimiento_general,m.pkidProducto, p.Nombre, m.concepto,m.documento,m.cantidad, p.Precio, p.Costo FROM movimiento_general m inner join producto p on m.pkidProducto = p.pkidProducto where m.concepto = '"+concepto +"' and m.fecha = '"+fecha+"';";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;
@@ -143,12 +143,13 @@ namespace Capa_Datos_SCM
 
 
         //---------------------------------------------------------------CONSULTA MOVIMIENTO GENERAL POR Producto------------------------------------------------------------------------------------------//
-        public OdbcDataReader consultaMovimientoGeneralProducto(string producto)
+        public OdbcDataReader consultaMovimientoGeneralProducto(string producto, string fecha)
         {
             try
             {
                 cn.conexionbd();
-                string consulta = "SELECT m.pkidmovimiento_general,m.pkidProducto, p.Nombre, m.concepto,m.documento,m.cantidad, p.Precio, p.Costo FROM movimiento_general m inner join producto p on m.pkidProducto=p.pkidProducto where m.pkidProducto='" + producto + "';";
+                
+                string consulta = "SELECT m.pkidmovimiento_general,m.pkidProducto, p.Nombre, m.concepto,m.documento,m.cantidad, p.Precio, p.Costo FROM movimiento_general m inner join producto p on m.pkidProducto = p.pkidProducto where m.pkidProducto = '" + producto + "' and m.fecha = '" + fecha + "';";
                 comm = new OdbcCommand(consulta, cn.conexionbd());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 return mostrar;

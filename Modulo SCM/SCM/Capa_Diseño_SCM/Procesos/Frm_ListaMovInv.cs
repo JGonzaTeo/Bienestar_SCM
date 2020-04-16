@@ -15,11 +15,18 @@ namespace Capa_Diseño_SCM
     public partial class Frm_ListaMovInv : Form
     {
         LACSCM logic = new LACSCM();
+        private object usuario;
+
         public Frm_ListaMovInv()
         {
             InitializeComponent();
             Dgv_listaMovInt.Rows.Clear();
             MostrarConsulta();
+        }
+
+        public Frm_ListaMovInv(object usuario)
+        {
+            this.usuario = usuario;
         }
 
 
@@ -49,9 +56,8 @@ namespace Capa_Diseño_SCM
 
         private void Btn_ayuda_Click(object sender, EventArgs e)
         {
-            /*
             string ruta = "";
-            string indice = "";
+            string indice = "55";
 
             OdbcDataReader mostrarayuda = logic.consultaayuda("2");
             try
@@ -68,7 +74,6 @@ namespace Capa_Diseño_SCM
             }
 
             Help.ShowHelp(this, ruta, indice);
-             */
         }
 
         private void Btn_cerrar_Click(object sender, EventArgs e)
@@ -86,16 +91,13 @@ namespace Capa_Diseño_SCM
         private void Btn_consultar_Click(object sender, EventArgs e)
         {
             // MOVIMIENTO DE INVENTARIOS LLENO CON TODOS LOS CAMPOS BLOQUEADOS
-            Frm_MovInvDetalle MILlenoBloqueado = new Frm_MovInvDetalle();
-            MILlenoBloqueado.Show();
+            /*Frm_MovInvDetalle MILlenoBloqueado = new Frm_MovInvDetalle();
+            MILlenoBloqueado.Show();*/
+
+            
         }
 
-        private void Btn_editar_Click(object sender, EventArgs e)
-        {
-            // MOVIMIENTO DE INVENTARIOS LLENO CON LOS CAMPOS DESBLOQUEADOS
-            Frm_MovInvDetalle MILlenoDesbloqueado = new Frm_MovInvDetalle();
-            MILlenoDesbloqueado.Show();
-        }
+       
 
         private void Dgv_listaMovInt_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -105,6 +107,12 @@ namespace Capa_Diseño_SCM
         }
 
         private void Frm_ListaMovInv_Load(object sender, EventArgs e)
+        {
+            Dgv_listaMovInt.Rows.Clear();
+            MostrarConsulta();
+        }
+
+        private void Btn_Actualizar_Click(object sender, EventArgs e)
         {
             Dgv_listaMovInt.Rows.Clear();
             MostrarConsulta();

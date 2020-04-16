@@ -48,7 +48,7 @@ namespace Capa_Diseño_SCM
 
         public void MostrarConsultaConcepto()
         {
-            OdbcDataReader mostrar = logic.consultaMovimientoGeneralConcepto(Txt_nombreConcep.Text);
+            OdbcDataReader mostrar = logic.consultaMovimientoGeneralConcepto(Txt_nombreConcep.Text,Txt_fechaMov.Text);
 
             try
             {
@@ -66,7 +66,7 @@ namespace Capa_Diseño_SCM
 
         public void MostrarConsultaProducto()
         {
-            OdbcDataReader mostrar = logic.consultaMovimientoGeneralProducto(txt_CodProducto.Text);
+            OdbcDataReader mostrar = logic.consultaMovimientoGeneralProducto(txt_CodProducto.Text,Txt_fechaMov.Text);
 
             try
             {
@@ -89,9 +89,8 @@ namespace Capa_Diseño_SCM
 
         private void Btn_Ayuda_Click(object sender, EventArgs e)
         {
-            /*
             string ruta = "";
-            string indice = "";
+            string indice = "56";
 
             OdbcDataReader mostrarayuda = logic.consultaayuda("2");
             try
@@ -108,7 +107,6 @@ namespace Capa_Diseño_SCM
             }
 
             Help.ShowHelp(this, ruta, indice);
-             */
         }
 
         private void Btn_cerrar_Click(object sender, EventArgs e)
@@ -157,17 +155,7 @@ namespace Capa_Diseño_SCM
 
         private void Btn_guardar_Click(object sender, EventArgs e)
         {
-            // GUARDA EL ENCABEZADO DEL MOVIMIENTO
-            try
-            {
-                OdbcDataReader encabezadoM = logic.InsertarMovimientoEncabezado(Txt_codigoMov.Text, Txt_codEmpleado.Text, Txt_fechaMov.Text);
-                MessageBox.Show("Datos Guardados.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Mensaje de error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+           
             if (Dgv_MovIntDetalles.Rows.Count == 0 || string.IsNullOrEmpty(Txt_codEmpleado.Text))
             {
                 MessageBox.Show("Hay un campo sin completar, por favor completarlo para continuar.");
@@ -186,11 +174,12 @@ namespace Capa_Diseño_SCM
 
                     
                     MessageBox.Show("Datos ingresados correctamente.");
+                    this.Close();
                     
                 }
                 catch (Exception err)
                 {
-                    MessageBox.Show(err.Message + ". Consulte con soporte tecnico.");
+                    MessageBox.Show(err.Message + ". No se pudo ingresar");
                 }
             }
 

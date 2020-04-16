@@ -1,4 +1,5 @@
 ﻿
+using Capa_Diseño_SCM;
 using Capa_Logica_SCM;
 using CapaDiseño.Consulta;
 using System;
@@ -104,7 +105,8 @@ namespace CapaDiseño.Mantenimientos
 
         private void Btn_minimizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            Frm_ListaMovInv ListaMov = new Frm_ListaMovInv();
+            ListaMov.Show();
         }
 
         private void Btn_Ayuda_Click(object sender, EventArgs e)

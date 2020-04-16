@@ -69,14 +69,14 @@ namespace Capa_Logica_SCM
             return sn.consultaMovimientoGeneral(fecha);
         }
 
-        public OdbcDataReader consultaMovimientoGeneralConcepto(string concepto)
+        public OdbcDataReader consultaMovimientoGeneralConcepto(string concepto,string fecha)
         {
-            return sn.consultaMovimientoGeneralConcepto(concepto);
+            return sn.consultaMovimientoGeneralConcepto(concepto,fecha);
         }
 
-        public OdbcDataReader consultaMovimientoGeneralProducto(string producto)
+        public OdbcDataReader consultaMovimientoGeneralProducto(string producto,string fecha)
         {
-            return sn.consultaMovimientoGeneralProducto(producto);
+            return sn.consultaMovimientoGeneralProducto(producto,fecha);
         }
 
     }
