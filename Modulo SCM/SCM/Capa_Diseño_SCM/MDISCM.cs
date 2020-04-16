@@ -179,49 +179,30 @@ namespace Capa_Diseño_SCM
             }
         }
 
-        bool ventanaExistencia = false;
-        Frm_ExistenciasProducto existenciaP = new Frm_ExistenciasProducto();
-        private void existenciasProductoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ExistenciasProducto);
-            if (ventanaExistencia == false || frmC == null)
-            {
-                if (frmC == null)
-                {
-                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
-                }
 
-                existenciaP.MdiParent = this;
-                existenciaP.Show();
-                Application.DoEvents();
-                ventanaExistencia = true;
-            }
-            else
-            {
-                existenciaP.WindowState = System.Windows.Forms.FormWindowState.Normal;
-            }
-        }
 
-        bool movimientoInventario = false;
-        Frm_ListaMovInv movInv = new Frm_ListaMovInv();
-        private void movimientosDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        bool ventanaListaMov = false;
+        Frm_ListaMovInv ListMov = new Frm_ListaMovInv("");
+        private void MovimientoDeInventariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Frm_ListaMovInv);
-            if (movimientoInventario == false || frmC == null)
+            if (ventanaListaMov == false || frmC == null)
             {
                 if (frmC == null)
                 {
-                    facturaP = new Frm_BusquedaOrdenCompra(susuario);
+                    ListMov = new Frm_ListaMovInv(susuario);
                 }
 
-                movInv.MdiParent = this;
-                movInv.Show();
+                ListMov.MdiParent = this;
+                ListMov.Show();
                 Application.DoEvents();
-                movimientoInventario = true;
+                ventanaListaMov = true;
             }
             else
             {
-                movInv.WindowState = System.Windows.Forms.FormWindowState.Normal;
+                ListMov.WindowState = System.Windows.Forms.FormWindowState.Normal;
             }
         }
     }

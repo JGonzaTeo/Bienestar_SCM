@@ -35,12 +35,12 @@
             this.Lbl_listaMovInt = new System.Windows.Forms.Label();
             this.Btn_cerrar = new System.Windows.Forms.Button();
             this.Btn_consultar = new System.Windows.Forms.Button();
-            this.Btn_editar = new System.Windows.Forms.Button();
             this.Btn_ingresar = new System.Windows.Forms.Button();
             this.Dgv_listaMovInt = new System.Windows.Forms.DataGridView();
             this.CodigoMov = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoMov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Actualizar = new System.Windows.Forms.Button();
             this.Pnl_nombreForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_listaMovInt)).BeginInit();
             this.SuspendLayout();
@@ -119,36 +119,15 @@
             this.Btn_consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_consultar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_consultar.Image")));
             this.Btn_consultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultar.Location = new System.Drawing.Point(383, 87);
+            this.Btn_consultar.Location = new System.Drawing.Point(338, 87);
             this.Btn_consultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_consultar.Name = "Btn_consultar";
-            this.Btn_consultar.Size = new System.Drawing.Size(187, 110);
+            this.Btn_consultar.Size = new System.Drawing.Size(146, 110);
             this.Btn_consultar.TabIndex = 6;
             this.Btn_consultar.Text = "Consultar";
             this.Btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_consultar.UseVisualStyleBackColor = false;
             this.Btn_consultar.Click += new System.EventHandler(this.Btn_consultar_Click);
-            // 
-            // Btn_editar
-            // 
-            this.Btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(40)))), ((int)(((byte)(15)))));
-            this.Btn_editar.FlatAppearance.BorderSize = 3;
-            this.Btn_editar.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.Btn_editar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.Btn_editar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.Btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_editar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_editar.Image")));
-            this.Btn_editar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_editar.Location = new System.Drawing.Point(268, 87);
-            this.Btn_editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_editar.Name = "Btn_editar";
-            this.Btn_editar.Size = new System.Drawing.Size(115, 110);
-            this.Btn_editar.TabIndex = 5;
-            this.Btn_editar.Text = "Editar";
-            this.Btn_editar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_editar.UseVisualStyleBackColor = false;
-            this.Btn_editar.Click += new System.EventHandler(this.Btn_editar_Click);
             // 
             // Btn_ingresar
             // 
@@ -161,7 +140,7 @@
             this.Btn_ingresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ingresar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ingresar.Image")));
             this.Btn_ingresar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_ingresar.Location = new System.Drawing.Point(156, 87);
+            this.Btn_ingresar.Location = new System.Drawing.Point(228, 87);
             this.Btn_ingresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_ingresar.Name = "Btn_ingresar";
             this.Btn_ingresar.Size = new System.Drawing.Size(115, 110);
@@ -208,14 +187,25 @@
             this.EstadoMov.Name = "EstadoMov";
             this.EstadoMov.Width = 125;
             // 
+            // btn_Actualizar
+            // 
+            this.btn_Actualizar.Location = new System.Drawing.Point(624, 415);
+            this.btn_Actualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Actualizar.Name = "btn_Actualizar";
+            this.btn_Actualizar.Size = new System.Drawing.Size(100, 28);
+            this.btn_Actualizar.TabIndex = 14;
+            this.btn_Actualizar.Text = "Actualizar";
+            this.btn_Actualizar.UseVisualStyleBackColor = true;
+            this.btn_Actualizar.Click += new System.EventHandler(this.Btn_Actualizar_Click);
+            // 
             // Frm_ListaMovInv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 448);
+            this.Controls.Add(this.btn_Actualizar);
             this.Controls.Add(this.Dgv_listaMovInt);
             this.Controls.Add(this.Btn_consultar);
-            this.Controls.Add(this.Btn_editar);
             this.Controls.Add(this.Btn_ingresar);
             this.Controls.Add(this.Pnl_nombreForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -239,11 +229,11 @@
         private System.Windows.Forms.Label Lbl_listaMovInt;
         private System.Windows.Forms.Button Btn_cerrar;
         private System.Windows.Forms.Button Btn_consultar;
-        private System.Windows.Forms.Button Btn_editar;
         private System.Windows.Forms.Button Btn_ingresar;
         private System.Windows.Forms.DataGridView Dgv_listaMovInt;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoMov;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoMov;
+        private System.Windows.Forms.Button btn_Actualizar;
     }
 }

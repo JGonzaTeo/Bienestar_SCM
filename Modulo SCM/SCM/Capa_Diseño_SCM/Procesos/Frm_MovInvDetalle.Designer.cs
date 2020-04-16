@@ -400,7 +400,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_MovInvDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Formulario Movimientos";
             this.Load += new System.EventHandler(this.Frm_MovInvDetalle_Load);
             this.Pnl_nombreForm.ResumeLayout(false);
             this.Pnl_nombreForm.PerformLayout();

@@ -91,12 +91,6 @@
     <Compile Include="Procesos\Frm_BusquedaOrdenCompra.Designer.cs">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\Frm_ExistenciasProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Frm_ExistenciasProducto.Designer.cs">
-      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Procesos\Frm_FacturaProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_BusquedaOrdenCompra.resx">
       <DependentUpon>Frm_BusquedaOrdenCompra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Frm_ExistenciasProducto.resx">
-      <DependentUpon>Frm_ExistenciasProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_FacturaProveedores.resx">
       <DependentUpon>Frm_FacturaProveedores.cs</DependentUpon>
